@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  21 JAN 2019 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  3 FEB 2019 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1017,14 +1017,37 @@ stry (CN)
 \mhchem@option@minusmathsidebearingright=\dimen266
 \mhchem@option@minustextsidebearingleft=\dimen267
 \mhchem@option@minustextsidebearingright=\dimen268
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
 
 
-Package mhchem Warning: You did not specify a 'version' option for the mhchem
-(mhchem)                package. Please write \usepackage[version=4]{mhchem}
-(mhchem)                in your preamble (or any lower number for
-(mhchem)                compatibility mode), because you might get slightly
-(mhchem)                different output with the same input in future versions
-.
+! LaTeX Error: Command \counterwithout already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...thout}{\@ifstar{\c@t@soutstar}{\c@t@sout}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \counterwithin already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...rwithin}{\@ifstar{\c@t@sinstar}{\c@t@sin}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/chemformula/chemformula.sty
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -1760,60 +1783,30 @@ Package csquotes Info: ... found 'babel' package.
 
 LaTeX Warning: Label `table:rates' multiply defined.
 
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:' multiply defined.
-
-
-LaTeX Warning: Label `fig:' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:' multiply defined.
-
 )
 \openout1 = `SPH_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 70.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 74.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -1859,8 +1852,8 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 70.
-LaTeX Info: Redefining \microtypecontext on input line 70.
+LaTeX Info: Redefining \selectfont on input line 74.
+LaTeX Info: Redefining \microtypecontext on input line 74.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1875,7 +1868,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 74.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1885,9 +1878,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count362
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 
 (./SPH_thesis.out) (./SPH_thesis.out)
 \@outlinefile=\write4
@@ -1939,14 +1932,14 @@ Dictionary: translator-basic-dictionary, Language: English
 (/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-Package csquotes Info: Making character " active on input line 70.
+Package csquotes Info: Making character " active on input line 74.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 70.
+. Activating mapping `default' on line 74.
 .................................................
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 74
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -1956,30 +1949,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 74
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 74
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 70
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 74
 .
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -2006,20 +1999,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 \openout5 = `SPH_thesis.toc'.
 
  [7]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 172.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 177.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 185.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 192.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
  [8
 
 ]
@@ -2036,1780 +2029,1801 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 \openout8 = `SPH_thesis.lot'.
 
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 225--232
-
- []
-
-[15] [16] [17]
+[13] [14] [15] [16] [17]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 267.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 274.
  [18] [19] [20]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 331.
- [1
-
-
-]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 348.
-<helix0.jpg, id=430, 2325.68875pt x 3469.96375pt>
-File: helix0.jpg Graphic file (type jpg)
-<use helix0.jpg>
-Package pdftex.def Info: helix0.jpg  used on input line 359.
-(pdftex.def)             Requested size: 125.20822pt x 186.79813pt.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 344.
+<frequencies.jpeg, id=477, 3735.9575pt x 2236.355pt>
+File: frequencies.jpeg Graphic file (type jpg)
+<use frequencies.jpeg>
+Package pdftex.def Info: frequencies.jpeg  used on input line 351.
+(pdftex.def)             Requested size: 373.61765pt x 223.6486pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 360.
-<sheet0.jpg, id=431, 1543.7675pt x 1012.78375pt>
-File: sheet0.jpg Graphic file (type jpg)
-<use sheet0.jpg>
-Package pdftex.def Info: sheet0.jpg  used on input line 362.
-(pdftex.def)             Requested size: 182.12074pt x 119.47345pt.
-<tertiary0.jpg, id=432, 2473.24pt x 3257.16875pt>
-File: tertiary0.jpg Graphic file (type jpg)
-<use tertiary0.jpg>
-Package pdftex.def Info: tertiary0.jpg  used on input line 365.
-(pdftex.def)             Requested size: 159.35434pt x 209.8348pt.
- [2] [3 <./helix0.jpg> <./sheet0.jpg> <./tertiary0.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 382.
-
-[4]
-<RC_PKA_holo.png, id=446, 882.29625pt x 820.06375pt>
-File: RC_PKA_holo.png Graphic file (type png)
-<use RC_PKA_holo.png>
-Package pdftex.def Info: RC_PKA_holo.png  used on input line 389.
-(pdftex.def)             Requested size: 208.21472pt x 193.52837pt.
-<RC_PKA.png, id=448, 1034.86626pt x 824.07875pt>
-File: RC_PKA.png Graphic file (type png)
-<use RC_PKA.png>
-Package pdftex.def Info: RC_PKA.png  used on input line 390.
-(pdftex.def)             Requested size: 244.22pt x 194.47586pt.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 352.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 392.
+(caption)                outside box or environment on input line 353.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 392.
+(caption)                outside box or environment on input line 353.
+See the caption package documentation for explanation.
+
+[1
+
+
+] [2 <./frequencies.jpeg>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 374.
+ [3]
+<helix0.jpg, id=494, 2325.68875pt x 3469.96375pt>
+File: helix0.jpg Graphic file (type jpg)
+<use helix0.jpg>
+Package pdftex.def Info: helix0.jpg  used on input line 392.
+(pdftex.def)             Requested size: 92.65286pt x 138.19249pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 393.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 393.
+<sheet0.jpg, id=495, 1543.7675pt x 1012.78375pt>
+File: sheet0.jpg Graphic file (type jpg)
+<use sheet0.jpg>
+Package pdftex.def Info: sheet0.jpg  used on input line 395.
+(pdftex.def)             Requested size: 134.76758pt x 88.41127pt.
+<tertiary0.jpg, id=496, 2473.24pt x 3257.16875pt>
+File: tertiary0.jpg Graphic file (type jpg)
+<use tertiary0.jpg>
+Package pdftex.def Info: tertiary0.jpg  used on input line 398.
+(pdftex.def)             Requested size: 109.49721pt x 144.18065pt.
+ [4 <./helix0.jpg> <./sheet0.jpg> <./tertiary0.jpg>]
+
+LaTeX Warning: Citation `Caretta2011' on page 5 undefined on input line 417.
+
+[5]
+<RC_PKA_holo.png, id=506, 882.29625pt x 820.06375pt>
+File: RC_PKA_holo.png Graphic file (type png)
+<use RC_PKA_holo.png>
+Package pdftex.def Info: RC_PKA_holo.png  used on input line 423.
+(pdftex.def)             Requested size: 194.10577pt x 180.41458pt.
+<RC_PKA.png, id=508, 1034.86626pt x 824.07875pt>
+File: RC_PKA.png Graphic file (type png)
+<use RC_PKA.png>
+Package pdftex.def Info: RC_PKA.png  used on input line 424.
+(pdftex.def)             Requested size: 227.67128pt x 181.29788pt.
+
+
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 426.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 392.
+(caption)                outside box or environment on input line 426.
 See the caption package documentation for explanation.
 
-[5 <./RC_PKA_holo.png> <./RC_PKA.png>] [6] [7] [8] [9] [10]
+[6] [7 <./RC_PKA_holo.png> <./RC_PKA.png>] [8] [9]
+
+LaTeX Warning: Citation `Boldon2015' on page 10 undefined on input line 473.
+
+
+LaTeX Warning: Citation `Carvalho2012' on page 10 undefined on input line 475.
+
+[10]
+
+LaTeX Warning: Citation `Dubochet1982' on page 11 undefined on input line 485.
+
+
+LaTeX Warning: Citation `Lepault1983' on page 11 undefined on input line 485.
+
+
+LaTeX Warning: Citation `Lepault1986' on page 11 undefined on input line 485.
+
+
+LaTeX Warning: Citation `SARTORI1993' on page 11 undefined on input line 485.
+
+[11]
+<SERCA_RyR.png, id=555, 1923.185pt x 1080.035pt>
+File: SERCA_RyR.png Graphic file (type png)
+<use SERCA_RyR.png>
+Package pdftex.def Info: SERCA_RyR.png  used on input line 492.
+(pdftex.def)             Requested size: 442.32326pt x 248.40283pt.
+
+
+LaTeX Warning: Citation `Ishima2000' on page 12 undefined on input line 497.
+
+
+LaTeX Warning: Citation `Frank1995' on page 12 undefined on input line 497.
+
+
+LaTeX Warning: Citation `Lee2015' on page 12 undefined on input line 497.
+
+
+LaTeX Warning: Citation `Sevvana2018' on page 12 undefined on input line 497.
+
+[12 <./SERCA_RyR.png>]
+
+LaTeX Warning: Citation `Frank1970' on page 13 undefined on input line 501.
+
+
+LaTeX Warning: Citation `Saxton1976' on page 13 undefined on input line 501.
+
+
+LaTeX Warning: Citation `Frank2009' on page 13 undefined on input line 501.
+
+[13] [14] [15]
 Chapter 1.
-<Frontiers_Paper_Chapter2.pdf, id=494, 597.49223pt x 782.44322pt>
+<Frontiers_Paper_Chapter2.pdf, id=575, 597.49223pt x 782.44322pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf  used on input line 515.
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf  used on input line 579.
 (pdftex.def)             Requested size: 597.49077pt x 782.44131pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf  used on input line 515.
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf  used on input line 579.
 (pdftex.def)             Requested size: 597.49077pt x 782.44131pt.
-<Frontiers_Paper_Chapter2.pdf, id=497, page=1, 597.49223pt x 782.44322pt>
+<Frontiers_Paper_Chapter2.pdf, id=578, page=1, 597.49223pt x 782.44322pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 1>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page1 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 597.49077pt x 782.44131pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 1>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page1 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.73804pt x 704.1924pt.
-[11
+[16
 
 ]
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 1>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page1 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.73804pt x 704.1924pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 1>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page1 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.73804pt x 704.1924pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 1>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page1 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.73804pt x 704.1924pt.
- [12 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=534, page=2, 597.4923pt x 782.44334pt>
+ [17 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=616, page=2, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 2>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page2 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 2>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page2 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
+(caption)                particular \caption on input line 579.
 See the caption package documentation for explanation.
 
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 2>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page2 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-[13 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=550, page=3, 597.4923pt x 782.44334pt>
+[18 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=632, page=3, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 3>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page3 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 3>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page3 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
+(caption)                particular \caption on input line 579.
 See the caption package documentation for explanation.
 
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 3>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page3 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-[14 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=555, page=4, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 4>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 4>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
-See the caption package documentation for explanation.
-
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 4>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-[15 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=562, page=5, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 5>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 5>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 5>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [16 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=567, page=6, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 6>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 6>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
-See the caption package documentation for explanation.
-
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 6>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-[17 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=575, page=7, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 7>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 7>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 7>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [18 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=585, page=8, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 8>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 8>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
-See the caption package documentation for explanation.
-
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 8>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
-e 515.
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 [19 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=595, page=9, 597.4923pt x 782.44334pt>
+<Frontiers_Paper_Chapter2.pdf, id=637, page=4, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 9>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
-e 515.
+<use Frontiers_Paper_Chapter2.pdf, page 4>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 9>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 9>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
-e 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [20 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=604, page=10, 597.4923pt x 782.44334pt>
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 10>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page10 used on input li
-ne 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 10>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page10 used on input li
-ne 515.
+<use Frontiers_Paper_Chapter2.pdf, page 4>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
+e 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 515.
+(caption)                particular \caption on input line 579.
+See the caption package documentation for explanation.
+
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 4>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page4 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+[20 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=644, page=5, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 5>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 5>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 5>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page5 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+ [21 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=649, page=6, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 6>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 6>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 579.
+See the caption package documentation for explanation.
+
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 6>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page6 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+[22 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=656, page=7, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 7>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 7>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 7>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page7 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+ [23 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=667, page=8, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 8>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 8>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 579.
+See the caption package documentation for explanation.
+
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 8>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page8 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+[24 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=677, page=9, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 9>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 9>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 9>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page9 used on input lin
+e 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+ [25 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=686, page=10, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 10>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page10 used on input li
+ne 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 10>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page10 used on input li
+ne 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 579.
 See the caption package documentation for explanation.
 
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 10>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page10 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-[21 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=611, page=11, 597.4923pt x 782.44334pt>
+[26 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=693, page=11, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 11>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page11 used on input li
-ne 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 11>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page11 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 11>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page11 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [22 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=616, page=12, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 11>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page11 used on input li
+ne 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+ [27 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=698, page=12, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 12>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page12 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 12>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page12 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 12>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page12 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 
-[23 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=622, page=13, 597.4923pt x 782.44334pt>
+[28 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=703, page=13, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 13>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page13 used on input li
-ne 515.
-(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
-File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
-<use Frontiers_Paper_Chapter2.pdf, page 13>
-Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page13 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 13>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page13 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [24 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=628, page=14, 597.4923pt x 782.44334pt>
+File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
+<use Frontiers_Paper_Chapter2.pdf, page 13>
+Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page13 used on input li
+ne 579.
+(pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
+ [29 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=709, page=14, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 14>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page14 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 14>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page14 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 14>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page14 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 
-[25 <./Frontiers_Paper_Chapter2.pdf>]
-<Frontiers_Paper_Chapter2.pdf, id=633, page=15, 597.4923pt x 782.44334pt>
+[30 <./Frontiers_Paper_Chapter2.pdf>]
+<Frontiers_Paper_Chapter2.pdf, id=714, page=15, 597.4923pt x 782.44334pt>
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 15>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page15 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 15>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page15 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
 File: Frontiers_Paper_Chapter2.pdf Graphic file (type pdf)
 <use Frontiers_Paper_Chapter2.pdf, page 15>
 Package pdftex.def Info: Frontiers_Paper_Chapter2.pdf , page15 used on input li
-ne 515.
+ne 579.
 (pdftex.def)             Requested size: 537.7381pt x 704.1925pt.
- [26 <./Frontiers_Paper_Chapter2.pdf>]
+ [31 <./Frontiers_Paper_Chapter2.pdf>]
+[32]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--529
+Underfull \hbox (badness 10000) in paragraph at lines 593--595
 
  []
 
-[27
+[33
 
-] [28]
-<Buffalo_MainText.pdf, id=646, 614.295pt x 794.97pt>
+] [34]
+<Buffalo_MainText.pdf, id=731, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf>
-Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 531.
+Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 597.
 (pdftex.def)             Requested size: 388.24518pt x 502.41609pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf>
-Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 627.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf>
-Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf  used on input line 627.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Buffalo_MainText.pdf, id=649, page=2, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=734, page=2, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf, page 2>
-Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 627.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf, page 2>
-Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [29 <./Buffalo_MainText.pdf>]
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 2>
-Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 2>
-Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 2>
-Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [30 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=685, page=3, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 3>
-Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 3>
-Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 3>
-Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [31 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=690, page=4, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 4>
-Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 4>
-Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 4>
-Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [32 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=695, page=5, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 5>
-Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 5>
-Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 5>
-Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [33 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=700, page=6, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 6>
-Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 6>
-Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 6>
-Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [34 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=705, page=7, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 7>
-Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 7>
-Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 7>
-Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [35 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=711, page=8, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 8>
-Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 561.
+<use Buffalo_MainText.pdf, page 2>
+Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 8>
-Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 561.
+<use Buffalo_MainText.pdf, page 2>
+Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 8>
-Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 561.
+<use Buffalo_MainText.pdf, page 2>
+Package pdftex.def Info: Buffalo_MainText.pdf , page2 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [36 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=716, page=9, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=770, page=3, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 9>
-Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 561.
+<use Buffalo_MainText.pdf, page 3>
+Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 9>
-Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 561.
+<use Buffalo_MainText.pdf, page 3>
+Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 9>
-Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 561.
+<use Buffalo_MainText.pdf, page 3>
+Package pdftex.def Info: Buffalo_MainText.pdf , page3 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [37 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=721, page=10, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=775, page=4, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 10>
-Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 561.
+<use Buffalo_MainText.pdf, page 4>
+Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 10>
-Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 561.
+<use Buffalo_MainText.pdf, page 4>
+Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 10>
-Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 561.
+<use Buffalo_MainText.pdf, page 4>
+Package pdftex.def Info: Buffalo_MainText.pdf , page4 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [38 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=726, page=11, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=781, page=5, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 11>
-Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 561.
+<use Buffalo_MainText.pdf, page 5>
+Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 11>
-Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 561.
+<use Buffalo_MainText.pdf, page 5>
+Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 11>
-Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 561.
+<use Buffalo_MainText.pdf, page 5>
+Package pdftex.def Info: Buffalo_MainText.pdf , page5 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-[39 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=731, page=12, 614.295pt x 794.97pt>
+ [39 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=786, page=6, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 12>
-Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 12>
-Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 561.
+<use Buffalo_MainText.pdf, page 6>
+Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 12>
-Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 561.
+<use Buffalo_MainText.pdf, page 6>
+Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 6>
+Package pdftex.def Info: Buffalo_MainText.pdf , page6 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [40 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=736, page=13, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=791, page=7, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 13>
-Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 561.
+<use Buffalo_MainText.pdf, page 7>
+Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 13>
-Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 561.
+<use Buffalo_MainText.pdf, page 7>
+Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 13>
-Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 561.
+<use Buffalo_MainText.pdf, page 7>
+Package pdftex.def Info: Buffalo_MainText.pdf , page7 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [41 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=742, page=14, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=797, page=8, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 14>
-Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 561.
+<use Buffalo_MainText.pdf, page 8>
+Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 14>
-Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 561.
+<use Buffalo_MainText.pdf, page 8>
+Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 14>
-Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 561.
+<use Buffalo_MainText.pdf, page 8>
+Package pdftex.def Info: Buffalo_MainText.pdf , page8 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [42 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=747, page=15, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=802, page=9, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 15>
-Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 561.
+<use Buffalo_MainText.pdf, page 9>
+Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 15>
-Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 15>
-Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[43 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=756, page=16, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 16>
-Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 561.
+<use Buffalo_MainText.pdf, page 9>
+Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 16>
-Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 561.
+<use Buffalo_MainText.pdf, page 9>
+Package pdftex.def Info: Buffalo_MainText.pdf , page9 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
+ [43 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=807, page=10, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 16>
-Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[44 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=764, page=17, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 17>
-Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 561.
+<use Buffalo_MainText.pdf, page 10>
+Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 17>
-Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 561.
+<use Buffalo_MainText.pdf, page 10>
+Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 17>
-Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 561.
+<use Buffalo_MainText.pdf, page 10>
+Package pdftex.def Info: Buffalo_MainText.pdf , page10 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [44 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=812, page=11, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 11>
+Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 11>
+Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 11>
+Package pdftex.def Info: Buffalo_MainText.pdf , page11 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
 [45 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=772, page=18, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=817, page=12, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 18>
-Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 561.
+<use Buffalo_MainText.pdf, page 12>
+Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 18>
-Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 18>
-Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[46 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=778, page=19, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 19>
-Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 561.
+<use Buffalo_MainText.pdf, page 12>
+Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 19>
-Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 561.
+<use Buffalo_MainText.pdf, page 12>
+Package pdftex.def Info: Buffalo_MainText.pdf , page12 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
+ [46 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=822, page=13, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 19>
-Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[47 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=787, page=20, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 20>
-Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 561.
+<use Buffalo_MainText.pdf, page 13>
+Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 20>
-Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 20>
-Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[48 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=795, page=21, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 21>
-Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 561.
+<use Buffalo_MainText.pdf, page 13>
+Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 21>
-Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 561.
+<use Buffalo_MainText.pdf, page 13>
+Package pdftex.def Info: Buffalo_MainText.pdf , page13 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [47 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=828, page=14, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 14>
+Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 14>
+Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 14>
+Package pdftex.def Info: Buffalo_MainText.pdf , page14 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [48 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=833, page=15, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 15>
+Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 15>
+Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 21>
-Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 561.
+<use Buffalo_MainText.pdf, page 15>
+Package pdftex.def Info: Buffalo_MainText.pdf , page15 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [49 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=805, page=22, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=842, page=16, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 22>
-Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 561.
+<use Buffalo_MainText.pdf, page 16>
+Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 22>
-Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 561.
+<use Buffalo_MainText.pdf, page 16>
+Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 22>
-Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 561.
+<use Buffalo_MainText.pdf, page 16>
+Package pdftex.def Info: Buffalo_MainText.pdf , page16 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [50 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=813, page=23, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=850, page=17, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 23>
-Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 561.
+<use Buffalo_MainText.pdf, page 17>
+Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 23>
-Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 561.
+<use Buffalo_MainText.pdf, page 17>
+Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 23>
-Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 561.
+<use Buffalo_MainText.pdf, page 17>
+Package pdftex.def Info: Buffalo_MainText.pdf , page17 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [51 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=821, page=24, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=858, page=18, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 24>
-Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 561.
+<use Buffalo_MainText.pdf, page 18>
+Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 24>
-Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 561.
+<use Buffalo_MainText.pdf, page 18>
+Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 24>
-Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 561.
+<use Buffalo_MainText.pdf, page 18>
+Package pdftex.def Info: Buffalo_MainText.pdf , page18 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [52 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=829, page=25, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=864, page=19, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 25>
-Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 561.
+<use Buffalo_MainText.pdf, page 19>
+Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 25>
-Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 561.
+<use Buffalo_MainText.pdf, page 19>
+Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 25>
-Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 561.
+<use Buffalo_MainText.pdf, page 19>
+Package pdftex.def Info: Buffalo_MainText.pdf , page19 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [53 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=838, page=26, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=873, page=20, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 26>
-Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 561.
+<use Buffalo_MainText.pdf, page 20>
+Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 26>
-Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 561.
+<use Buffalo_MainText.pdf, page 20>
+Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 26>
-Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 561.
+<use Buffalo_MainText.pdf, page 20>
+Package pdftex.def Info: Buffalo_MainText.pdf , page20 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [54 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=846, page=27, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=881, page=21, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 27>
-Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 561.
+<use Buffalo_MainText.pdf, page 21>
+Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 27>
-Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 561.
+<use Buffalo_MainText.pdf, page 21>
+Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 27>
-Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 561.
+<use Buffalo_MainText.pdf, page 21>
+Package pdftex.def Info: Buffalo_MainText.pdf , page21 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [55 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=854, page=28, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=890, page=22, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 28>
-Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 561.
+<use Buffalo_MainText.pdf, page 22>
+Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 28>
-Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 561.
+<use Buffalo_MainText.pdf, page 22>
+Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 28>
-Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 561.
+<use Buffalo_MainText.pdf, page 22>
+Package pdftex.def Info: Buffalo_MainText.pdf , page22 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [56 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=862, page=29, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=898, page=23, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 29>
-Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 561.
+<use Buffalo_MainText.pdf, page 23>
+Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 29>
-Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 561.
+<use Buffalo_MainText.pdf, page 23>
+Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 29>
-Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 561.
+<use Buffalo_MainText.pdf, page 23>
+Package pdftex.def Info: Buffalo_MainText.pdf , page23 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [57 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=870, page=30, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=906, page=24, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 30>
-Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 561.
+<use Buffalo_MainText.pdf, page 24>
+Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 30>
-Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 561.
+<use Buffalo_MainText.pdf, page 24>
+Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 30>
-Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 561.
+<use Buffalo_MainText.pdf, page 24>
+Package pdftex.def Info: Buffalo_MainText.pdf , page24 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [58 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=878, page=31, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=914, page=25, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 31>
-Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 561.
+<use Buffalo_MainText.pdf, page 25>
+Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 31>
-Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 561.
+<use Buffalo_MainText.pdf, page 25>
+Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 31>
-Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 561.
+<use Buffalo_MainText.pdf, page 25>
+Package pdftex.def Info: Buffalo_MainText.pdf , page25 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [59 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=887, page=32, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=923, page=26, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 32>
-Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 561.
+<use Buffalo_MainText.pdf, page 26>
+Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 32>
-Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 561.
+<use Buffalo_MainText.pdf, page 26>
+Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 32>
-Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 561.
+<use Buffalo_MainText.pdf, page 26>
+Package pdftex.def Info: Buffalo_MainText.pdf , page26 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [60 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=895, page=33, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=931, page=27, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 33>
-Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 561.
+<use Buffalo_MainText.pdf, page 27>
+Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 33>
-Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 561.
+<use Buffalo_MainText.pdf, page 27>
+Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 33>
-Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 561.
+<use Buffalo_MainText.pdf, page 27>
+Package pdftex.def Info: Buffalo_MainText.pdf , page27 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [61 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=903, page=34, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=939, page=28, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 34>
-Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 561.
+<use Buffalo_MainText.pdf, page 28>
+Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 34>
-Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 561.
+<use Buffalo_MainText.pdf, page 28>
+Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 34>
-Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 561.
+<use Buffalo_MainText.pdf, page 28>
+Package pdftex.def Info: Buffalo_MainText.pdf , page28 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [62 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=911, page=35, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=947, page=29, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 35>
-Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 561.
+<use Buffalo_MainText.pdf, page 29>
+Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 35>
-Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 561.
+<use Buffalo_MainText.pdf, page 29>
+Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 35>
-Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 561.
+<use Buffalo_MainText.pdf, page 29>
+Package pdftex.def Info: Buffalo_MainText.pdf , page29 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [63 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=919, page=36, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=956, page=30, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 36>
-Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 561.
+<use Buffalo_MainText.pdf, page 30>
+Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 36>
-Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 561.
+<use Buffalo_MainText.pdf, page 30>
+Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 627.
 See the caption package documentation for explanation.
 
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 36>
-Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 561.
+<use Buffalo_MainText.pdf, page 30>
+Package pdftex.def Info: Buffalo_MainText.pdf , page30 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 [64 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=927, page=37, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=964, page=31, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 31>
+Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 31>
+Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 31>
+Package pdftex.def Info: Buffalo_MainText.pdf , page31 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[65 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=973, page=32, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 32>
+Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 32>
+Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 32>
+Package pdftex.def Info: Buffalo_MainText.pdf , page32 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[66 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=981, page=33, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 33>
+Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 33>
+Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 33>
+Package pdftex.def Info: Buffalo_MainText.pdf , page33 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[67 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=989, page=34, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 34>
+Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 34>
+Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 34>
+Package pdftex.def Info: Buffalo_MainText.pdf , page34 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[68 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=997, page=35, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 35>
+Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 35>
+Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 35>
+Package pdftex.def Info: Buffalo_MainText.pdf , page35 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[69 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1005, page=36, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 36>
+Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 36>
+Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 627.
+See the caption package documentation for explanation.
+
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 36>
+Package pdftex.def Info: Buffalo_MainText.pdf , page36 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+[70 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1013, page=37, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf, page 37>
-Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf, page 37>
-Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
 <use Buffalo_MainText.pdf, page 37>
-Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [65 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=933, page=38, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 38>
-Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 38>
-Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 38>
-Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [66 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=938, page=39, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 39>
-Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 39>
-Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 39>
-Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [67 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=945, page=40, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 40>
-Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 40>
-Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 40>
-Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [68 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=950, page=41, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 41>
-Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 41>
-Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 41>
-Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [69 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=955, page=42, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 42>
-Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 42>
-Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 42>
-Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [70 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=960, page=43, 614.295pt x 794.97pt>
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 43>
-Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 43>
-Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 43>
-Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 561.
+Package pdftex.def Info: Buffalo_MainText.pdf , page37 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [71 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=967, page=44, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1019, page=38, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 44>
-Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 561.
+<use Buffalo_MainText.pdf, page 38>
+Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 44>
-Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 561.
+<use Buffalo_MainText.pdf, page 38>
+Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 44>
-Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 561.
+<use Buffalo_MainText.pdf, page 38>
+Package pdftex.def Info: Buffalo_MainText.pdf , page38 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [72 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=972, page=45, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1024, page=39, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 45>
-Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 561.
+<use Buffalo_MainText.pdf, page 39>
+Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 45>
-Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 561.
+<use Buffalo_MainText.pdf, page 39>
+Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 45>
-Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 561.
+<use Buffalo_MainText.pdf, page 39>
+Package pdftex.def Info: Buffalo_MainText.pdf , page39 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [73 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=977, page=46, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1031, page=40, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 46>
-Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 561.
+<use Buffalo_MainText.pdf, page 40>
+Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 46>
-Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 561.
+<use Buffalo_MainText.pdf, page 40>
+Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 46>
-Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 561.
+<use Buffalo_MainText.pdf, page 40>
+Package pdftex.def Info: Buffalo_MainText.pdf , page40 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [74 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=982, page=47, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1036, page=41, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 47>
-Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 561.
+<use Buffalo_MainText.pdf, page 41>
+Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 47>
-Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 561.
+<use Buffalo_MainText.pdf, page 41>
+Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 47>
-Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 561.
+<use Buffalo_MainText.pdf, page 41>
+Package pdftex.def Info: Buffalo_MainText.pdf , page41 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [75 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=987, page=48, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1041, page=42, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 48>
-Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 561.
+<use Buffalo_MainText.pdf, page 42>
+Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 48>
-Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 561.
+<use Buffalo_MainText.pdf, page 42>
+Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 48>
-Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 561.
+<use Buffalo_MainText.pdf, page 42>
+Package pdftex.def Info: Buffalo_MainText.pdf , page42 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [76 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=992, page=49, 614.295pt x 794.97pt>
+<Buffalo_MainText.pdf, id=1046, page=43, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 49>
-Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 561.
+<use Buffalo_MainText.pdf, page 43>
+Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 49>
-Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 561.
+<use Buffalo_MainText.pdf, page 43>
+Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 49>
-Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 561.
+<use Buffalo_MainText.pdf, page 43>
+Package pdftex.def Info: Buffalo_MainText.pdf , page43 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-
-[77 <./Buffalo_MainText.pdf>]
-<Buffalo_MainText.pdf, id=998, page=50, 614.295pt x 794.97pt>
+ [77 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1052, page=44, 614.295pt x 794.97pt>
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 50>
-Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 561.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 50>
-Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 561.
+<use Buffalo_MainText.pdf, page 44>
+Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Buffalo_MainText.pdf Graphic file (type pdf)
-<use Buffalo_MainText.pdf, page 50>
-Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 561.
+<use Buffalo_MainText.pdf, page 44>
+Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 44>
+Package pdftex.def Info: Buffalo_MainText.pdf , page44 used on input line 627.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
  [78 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1057, page=45, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 45>
+Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 45>
+Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 45>
+Package pdftex.def Info: Buffalo_MainText.pdf , page45 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [79 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1062, page=46, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 46>
+Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 46>
+Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 46>
+Package pdftex.def Info: Buffalo_MainText.pdf , page46 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [80 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1067, page=47, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 47>
+Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 47>
+Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 47>
+Package pdftex.def Info: Buffalo_MainText.pdf , page47 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [81 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1072, page=48, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 48>
+Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 48>
+Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 48>
+Package pdftex.def Info: Buffalo_MainText.pdf , page48 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [82 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1077, page=49, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 49>
+Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 49>
+Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 49>
+Package pdftex.def Info: Buffalo_MainText.pdf , page49 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+
+[83 <./Buffalo_MainText.pdf>]
+<Buffalo_MainText.pdf, id=1083, page=50, 614.295pt x 794.97pt>
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 50>
+Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 50>
+Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+File: Buffalo_MainText.pdf Graphic file (type pdf)
+<use Buffalo_MainText.pdf, page 50>
+Package pdftex.def Info: Buffalo_MainText.pdf , page50 used on input line 627.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [84 <./Buffalo_MainText.pdf>] [85]
 Chapter 3.
-[79
+[86
 
 ]
-<Flipback_Paper_Chapter3.pdf, id=1007, 627.78136pt x 821.43086pt>
+<Flipback_Paper_Chapter3.pdf, id=1096, 627.78136pt x 821.43086pt>
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf>
-Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 577.
+Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 645.
 (pdftex.def)             Requested size: 437.46106pt x 572.37373pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf>
-Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 590.
+Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 658.
 (pdftex.def)             Requested size: 627.77982pt x 821.42886pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf>
-Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 590.
+Package pdftex.def Info: Flipback_Paper_Chapter3.pdf  used on input line 658.
 (pdftex.def)             Requested size: 627.77982pt x 821.42886pt.
-<Flipback_Paper_Chapter3.pdf, id=1010, page=2, 627.78136pt x 821.43086pt>
+<Flipback_Paper_Chapter3.pdf, id=1099, page=2, 627.78136pt x 821.43086pt>
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 627.77982pt x 821.42886pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
- [80] [81 <./Flipback_Paper_Chapter3.pdf>]
+ [87] [88 <./Flipback_Paper_Chapter3.pdf>]
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
- 590.
-(pdftex.def)             Requested size: 564.998pt x 739.28096pt.
-File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
-<use Flipback_Paper_Chapter3.pdf, page 2>
-Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
- [82 <./Flipback_Paper_Chapter3.pdf>]
-<Flipback_Paper_Chapter3.pdf, id=1094, page=3, 627.78136pt x 821.43086pt>
+File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
+<use Flipback_Paper_Chapter3.pdf, page 2>
+Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page2 used on input line
+ 658.
+(pdftex.def)             Requested size: 564.998pt x 739.28096pt.
+ [89 <./Flipback_Paper_Chapter3.pdf>]
+<Flipback_Paper_Chapter3.pdf, id=1185, page=3, 627.78136pt x 821.43086pt>
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page3 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page3 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 590.
+(caption)                particular \caption on input line 658.
 See the caption package documentation for explanation.
 
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page3 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
-[83 <./Flipback_Paper_Chapter3.pdf>]
-<Flipback_Paper_Chapter3.pdf, id=1120, page=4, 627.78136pt x 821.43086pt>
+[90 <./Flipback_Paper_Chapter3.pdf>]
+<Flipback_Paper_Chapter3.pdf, id=1210, page=4, 627.78136pt x 821.43086pt>
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 4>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page4 used on input line
- 590.
-(pdftex.def)             Requested size: 564.998pt x 739.28096pt.
-File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
-<use Flipback_Paper_Chapter3.pdf, page 4>
-Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page4 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
 File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Paper_Chapter3.pdf, page 4>
 Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page4 used on input line
- 590.
+ 658.
 (pdftex.def)             Requested size: 564.998pt x 739.28096pt.
- [84 <./Flipback_Paper_Chapter3.pdf>]
+File: Flipback_Paper_Chapter3.pdf Graphic file (type pdf)
+<use Flipback_Paper_Chapter3.pdf, page 4>
+Package pdftex.def Info: Flipback_Paper_Chapter3.pdf , page4 used on input line
+ 658.
+(pdftex.def)             Requested size: 564.998pt x 739.28096pt.
+ [91 <./Flipback_Paper_Chapter3.pdf>]
 
 Package pdfpages Warning: There's something wrong with the entries
 (pdfpages)                of `addtolist'. Not all entries were
-(pdfpages)                processed. Check `addtolist' on input line 590.
+(pdfpages)                processed. Check `addtolist' on input line 658.
 
-<Flipback_Supplemental_Chapter3.pdf, id=1125, 614.295pt x 794.97pt>
+<Flipback_Supplemental_Chapter3.pdf, id=1215, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf  used on input line
- 595.
+ 663.
 (pdftex.def)             Requested size: 393.15683pt x 508.78204pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf  used on input line
- 611.
+ 679.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf  used on input line
- 611.
+ 679.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<Flipback_Supplemental_Chapter3.pdf, id=1128, page=2, 614.295pt x 794.97pt>
+<Flipback_Supplemental_Chapter3.pdf, id=1218, page=2, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[85 <./Flipback_Supplemental_Chapter3.pdf>]
+[92 <./Flipback_Supplemental_Chapter3.pdf>]
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
-ut line 611.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
-<use Flipback_Supplemental_Chapter3.pdf, page 2>
-Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 2>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [86 <./Flipback_Supplemental_Chapter3.pdf>]
-<Flipback_Supplemental_Chapter3.pdf, id=1156, page=3, 614.295pt x 794.97pt>
+File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
+<use Flipback_Supplemental_Chapter3.pdf, page 2>
+Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page2 used on inp
+ut line 679.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [93 <./Flipback_Supplemental_Chapter3.pdf>]
+<Flipback_Supplemental_Chapter3.pdf, id=1245, page=3, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page3 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page3 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 611.
+(caption)                particular \caption on input line 679.
 See the caption package documentation for explanation.
 
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 3>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page3 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[87 <./Flipback_Supplemental_Chapter3.pdf>]
-<Flipback_Supplemental_Chapter3.pdf, id=1165, page=4, 614.295pt x 794.97pt>
+[94 <./Flipback_Supplemental_Chapter3.pdf>]
+<Flipback_Supplemental_Chapter3.pdf, id=1254, page=4, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 4>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page4 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 4>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page4 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 611.
+(caption)                particular \caption on input line 679.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 611.
+(caption)                particular \caption on input line 679.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 611.
+(caption)                particular \caption on input line 679.
 See the caption package documentation for explanation.
 
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 4>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page4 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[88 <./Flipback_Supplemental_Chapter3.pdf>]
-<Flipback_Supplemental_Chapter3.pdf, id=1182, page=5, 614.295pt x 794.97pt>
+[95 <./Flipback_Supplemental_Chapter3.pdf>]
+<Flipback_Supplemental_Chapter3.pdf, id=1272, page=5, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 5>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page5 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 5>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page5 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 611.
+(caption)                particular \caption on input line 679.
 See the caption package documentation for explanation.
 
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 5>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page5 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-[89 <./Flipback_Supplemental_Chapter3.pdf>]
-<Flipback_Supplemental_Chapter3.pdf, id=1191, page=6, 614.295pt x 794.97pt>
+[96 <./Flipback_Supplemental_Chapter3.pdf>]
+<Flipback_Supplemental_Chapter3.pdf, id=1280, page=6, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 6>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page6 used on inp
-ut line 611.
-(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
-File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
-<use Flipback_Supplemental_Chapter3.pdf, page 6>
-Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page6 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 6>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page6 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [90 <./Flipback_Supplemental_Chapter3.pdf>]
-<Flipback_Supplemental_Chapter3.pdf, id=1200, page=7, 614.295pt x 794.97pt>
+File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
+<use Flipback_Supplemental_Chapter3.pdf, page 6>
+Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page6 used on inp
+ut line 679.
+(pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
+ [97 <./Flipback_Supplemental_Chapter3.pdf>]
+<Flipback_Supplemental_Chapter3.pdf, id=1290, page=7, 614.295pt x 794.97pt>
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 7>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page7 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 7>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page7 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
 File: Flipback_Supplemental_Chapter3.pdf Graphic file (type pdf)
 <use Flipback_Supplemental_Chapter3.pdf, page 7>
 Package pdftex.def Info: Flipback_Supplemental_Chapter3.pdf , page7 used on inp
-ut line 611.
+ut line 679.
 (pdftex.def)             Requested size: 552.86038pt x 715.4664pt.
- [91 <./Flipback_Supplemental_Chapter3.pdf>]
+ [98 <./Flipback_Supplemental_Chapter3.pdf>] [99]
 Chapter 4.
-[92
 
-] [93] [94]
+LaTeX Warning: Citation `Bernstein2006' on page 100 undefined on input line 699
+.
 
-LaTeX Warning: Citation `Stiles2001' on page 95 undefined on input line 653.
+[100
 
-[95]
+] [101]
+
+LaTeX Warning: Citation `Maleckar2017' on page 102 undefined on input line 707.
+
+
+[102]
+
+LaTeX Warning: Citation `Stiles2001a' on page 103 undefined on input line 730.
+
+[103]
+
+LaTeX Warning: Citation `Stiles2001a' on page 104 undefined on input line 737.
+
+[104] [105]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 770.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 682.
+(hyperref)                removing `superscript' on input line 770.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 770.
 
-[96]
-<TTfluxes_fig.png, id=1322, 516.0078pt x 493.845pt>
+[106]
+<TTfluxes_fig.png, id=1426, 516.0078pt x 493.845pt>
 File: TTfluxes_fig.png Graphic file (type png)
 <use TTfluxes_fig.png>
-Package pdftex.def Info: TTfluxes_fig.png  used on input line 731.
+Package pdftex.def Info: TTfluxes_fig.png  used on input line 819.
 (pdftex.def)             Requested size: 438.60869pt x 419.77022pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 733.
+(caption)                outside box or environment on input line 821.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 733.
+(caption)                outside box or environment on input line 821.
 See the caption package documentation for explanation.
 
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 734.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 735.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Float too large for page by 15.7951pt on input line 737.
-
-[97] [98 <./TTfluxes_fig.png>] [99]
-<ap.png, id=1349, 502.87875pt x 531.9875pt>
+[107] [108 <./TTfluxes_fig.png>] [109]
+<ap.png, id=1455, 502.87875pt x 531.9875pt>
 File: ap.png Graphic file (type png)
 <use ap.png>
-Package pdftex.def Info: ap.png  used on input line 795.
-(pdftex.def)             Requested size: 301.72957pt x 319.19496pt.
- [100] [101 <./ap.png>] [102]
-<SERCA2_fig.png, id=1377, 617.6676pt x 208.1376pt>
+Package pdftex.def Info: ap.png  used on input line 882.
+(pdftex.def)             Requested size: 251.43875pt x 265.9931pt.
+ [110 <./ap.png>] [111]
+<SERCA2_fig.png, id=1473, 617.6676pt x 208.1376pt>
 File: SERCA2_fig.png Graphic file (type png)
 <use SERCA2_fig.png>
-Package pdftex.def Info: SERCA2_fig.png  used on input line 862.
+Package pdftex.def Info: SERCA2_fig.png  used on input line 949.
 (pdftex.def)             Requested size: 450.8936pt x 151.93918pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 864.
+(caption)                outside box or environment on input line 951.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 864.
+(caption)                outside box or environment on input line 951.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 865.
+(caption)                outside box or environment on input line 952.
 See the caption package documentation for explanation.
 
-[103] [104 <./SERCA2_fig.png>] [105] [106] [107]
-<RyRflux_fig.png, id=1437, 685.6014pt x 527.0892pt>
+[112] [113 <./SERCA2_fig.png>] [114] [115] [116] [117]
+<RyRflux_fig.png, id=1541, 685.6014pt x 527.0892pt>
 File: RyRflux_fig.png Graphic file (type png)
 <use RyRflux_fig.png>
-Package pdftex.def Info: RyRflux_fig.png  used on input line 1015.
+Package pdftex.def Info: RyRflux_fig.png  used on input line 1102.
 (pdftex.def)             Requested size: 445.63562pt x 342.60393pt.
-<SERCAflux_fig.png, id=1438, 321.3606pt x 166.7028pt>
+<SERCAflux_fig.png, id=1542, 321.3606pt x 166.7028pt>
 File: SERCAflux_fig.png Graphic file (type png)
 <use SERCAflux_fig.png>
-Package pdftex.def Info: SERCAflux_fig.png  used on input line 1016.
+Package pdftex.def Info: SERCAflux_fig.png  used on input line 1103.
 (pdftex.def)             Requested size: 192.81784pt x 100.02243pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1018.
+(caption)                outside box or environment on input line 1105.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1018.
+(caption)                outside box or environment on input line 1105.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1019.
+(caption)                outside box or environment on input line 1106.
 See the caption package documentation for explanation.
 
-[108] [109 <./RyRflux_fig.png> <./SERCAflux_fig.png>] [110]
-<buffer_fluo_molecules_c_Comparison.png, id=1466, 718.685pt x 1127.21124pt>
+[118] [119 <./RyRflux_fig.png> <./SERCAflux_fig.png>]
+<buffer_fluo_molecules_c_Comparison.png, id=1567, 718.685pt x 1127.21124pt>
 File: buffer_fluo_molecules_c_Comparison.png Graphic file (type png)
 <use buffer_fluo_molecules_c_Comparison.png>
 Package pdftex.def Info: buffer_fluo_molecules_c_Comparison.png  used on input 
-line 1131.
+line 1218.
 (pdftex.def)             Requested size: 323.40526pt x 507.24037pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1133.
+(caption)                outside box or environment on input line 1220.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1133.
+(caption)                outside box or environment on input line 1220.
 See the caption package documentation for explanation.
 
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1134.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1135.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1136.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1137.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1138.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Float too large for page by 26.06517pt on input line 1141.
-
-<buffer_fluo_RyR_r_Comparison.png, id=1470, 718.685pt x 629.35126pt>
+[120] [121 <./buffer_fluo_molecules_c_Comparison.png>]
+<buffer_fluo_RyR_r_Comparison.png, id=1581, 718.685pt x 629.35126pt>
 File: buffer_fluo_RyR_r_Comparison.png Graphic file (type png)
 <use buffer_fluo_RyR_r_Comparison.png>
 Package pdftex.def Info: buffer_fluo_RyR_r_Comparison.png  used on input line 1
-150.
+231.
 (pdftex.def)             Requested size: 431.21432pt x 377.61366pt.
 
+
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1152.
+(caption)                outside box or environment on input line 1233.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1152.
+(caption)                outside box or environment on input line 1233.
 See the caption package documentation for explanation.
 
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1153.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1154.
-See the caption package documentation for explanation.
-
-<RyRflux_1AP_1LTCC.png, id=1472, 726.715pt x 352.31625pt>
+<RyRflux_1AP_1LTCC.png, id=1583, 732.7375pt x 352.31625pt>
 File: RyRflux_1AP_1LTCC.png Graphic file (type png)
 <use RyRflux_1AP_1LTCC.png>
-Package pdftex.def Info: RyRflux_1AP_1LTCC.png  used on input line 1163.
-(pdftex.def)             Requested size: 443.2955pt x 214.9126pt.
-<RyRflux_1AP_LTCC_hn_Comparison.png, id=1474, 863.225pt x 402.50375pt>
+Package pdftex.def Info: RyRflux_1AP_1LTCC.png  used on input line 1242.
+(pdftex.def)             Requested size: 446.96922pt x 214.9126pt.
+<RyRflux_1AP_LTCC_hn_Comparison.png, id=1585, 863.225pt x 402.50375pt>
 File: RyRflux_1AP_LTCC_hn_Comparison.png Graphic file (type png)
 <use RyRflux_1AP_LTCC_hn_Comparison.png>
 Package pdftex.def Info: RyRflux_1AP_LTCC_hn_Comparison.png  used on input line
- 1173.
+ 1252.
 (pdftex.def)             Requested size: 448.8796pt x 209.30315pt.
-[111] [112 <./buffer_fluo_molecules_c_Comparison.png>] [113 <./buffer_fluo_RyR_
-r_Comparison.png>] [114 <./RyRflux_1AP_1LTCC.png> <./RyRflux_1AP_LTCC_hn_Compar
-ison.png>]
-<cytCa_hnhd_Comparison.png, id=1504, 1080.035pt x 481.8pt>
+[122] [123 <./buffer_fluo_RyR_r_Comparison.png>] [124 <./RyRflux_1AP_1LTCC.png>
+ <./RyRflux_1AP_LTCC_hn_Comparison.png>]
+<cytCa_hnhd_Comparison.png, id=1608, 1080.035pt x 481.8pt>
 File: cytCa_hnhd_Comparison.png Graphic file (type png)
 <use cytCa_hnhd_Comparison.png>
-Package pdftex.def Info: cytCa_hnhd_Comparison.png  used on input line 1192.
+Package pdftex.def Info: cytCa_hnhd_Comparison.png  used on input line 1268.
 (pdftex.def)             Requested size: 453.61162pt x 202.35461pt.
 
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1194.
+(caption)                outside box or environment on input line 1270.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1194.
+(caption)                outside box or environment on input line 1270.
 See the caption package documentation for explanation.
 
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1195.
-See the caption package documentation for explanation.
-
-<hnhd1RyR_r_1AP_Comparison.png, id=1505, 1080.035pt x 481.8pt>
+<hnhd1RyR_r_1AP_Comparison.png, id=1609, 1080.035pt x 481.8pt>
 File: hnhd1RyR_r_1AP_Comparison.png Graphic file (type png)
 <use hnhd1RyR_r_1AP_Comparison.png>
-Package pdftex.def Info: hnhd1RyR_r_1AP_Comparison.png  used on input line 1204
+Package pdftex.def Info: hnhd1RyR_r_1AP_Comparison.png  used on input line 1280
 .
 (pdftex.def)             Requested size: 432.00635pt x 192.71658pt.
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1206.
+(caption)                outside box or environment on input line 1282.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1206.
+(caption)                outside box or environment on input line 1282.
 See the caption package documentation for explanation.
 
-<hnhd4RyR_r_Comparison.png, id=1506, 1085.05376pt x 481.8pt>
+<hnhd4RyR_r_Comparison.png, id=1610, 1085.05376pt x 481.8pt>
 File: hnhd4RyR_r_Comparison.png Graphic file (type png)
 <use hnhd4RyR_r_Comparison.png>
-Package pdftex.def Info: hnhd4RyR_r_Comparison.png  used on input line 1213.
+Package pdftex.def Info: hnhd4RyR_r_Comparison.png  used on input line 1289.
 (pdftex.def)             Requested size: 434.01381pt x 192.71658pt.
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1214.
+(caption)                outside box or environment on input line 1290.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1214.
+(caption)                outside box or environment on input line 1290.
 See the caption package documentation for explanation.
 
-<cytCa_geom_Comparison.png, id=1507, 1080.035pt x 481.8pt>
+<probabilities_RyRopen_hnhd_1-5_AP_Comparison.png, id=1611, 718.685pt x 1121.18
+875pt>
+File: probabilities_RyRopen_hnhd_1-5_AP_Comparison.png Graphic file (type png)
+<use probabilities_RyRopen_hnhd_1-5_AP_Comparison.png>
+Package pdftex.def Info: probabilities_RyRopen_hnhd_1-5_AP_Comparison.png  used
+ on input line 1303.
+(pdftex.def)             Requested size: 323.40526pt x 504.53027pt.
+
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 1305.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: \subcaption
+(caption)                outside box or environment on input line 1305.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Float too large for page by 20.55516pt on input line 1307.
+
+<cytCa_geom_Comparison.png, id=1612, 1080.035pt x 481.8pt>
 File: cytCa_geom_Comparison.png Graphic file (type png)
 <use cytCa_geom_Comparison.png>
-Package pdftex.def Info: cytCa_geom_Comparison.png  used on input line 1223.
+Package pdftex.def Info: cytCa_geom_Comparison.png  used on input line 1313.
 (pdftex.def)             Requested size: 432.00635pt x 192.71658pt.
 
 Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1225.
+(caption)                outside box or environment on input line 1315.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1225.
+(caption)                outside box or environment on input line 1315.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1226.
+(caption)                outside box or environment on input line 1316.
 See the caption package documentation for explanation.
 
-<probabilities_RyRopen_1-5_AP_Comparison.png, id=1508, 718.685pt x 1132.23pt>
-File: probabilities_RyRopen_1-5_AP_Comparison.png Graphic file (type png)
-<use probabilities_RyRopen_1-5_AP_Comparison.png>
-Package pdftex.def Info: probabilities_RyRopen_1-5_AP_Comparison.png  used on i
-nput line 1233.
-(pdftex.def)             Requested size: 359.34161pt x 566.11362pt.
-
-Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
-(caption)                outside box or environment on input line 1235.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: \subcaption
-(caption)                outside box or environment on input line 1235.
-See the caption package documentation for explanation.
-
+[125 <./cytCa_hnhd_Comparison.png>] [126 <./hnhd1RyR_r_1AP_Comparison.png> <./h
+nhd4RyR_r_Comparison.png>] [127 <./probabilities_RyRopen_hnhd_1-5_AP_Comparison
+.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (64.9256pt too wide) in paragraph at lines 1392--1422
+Overfull \hbox (64.9256pt too wide) in paragraph at lines 1472--1502
  [][] |
  []
 
@@ -3825,14 +3839,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[115] [116 <./cytCa_hnhd_Comparison.png> <./hnhd1RyR_r_1AP_Comparison.png>]
-[117 <./hnhd4RyR_r_Comparison.png> <./cytCa_geom_Comparison.png>] [118 <./proba
-bilities_RyRopen_1-5_AP_Comparison.png>] [119] [120] [121] [122]
-(./SPH_thesis.bbl [123
+[128 <./cytCa_geom_Comparison.png>] [129] [130] [131] [132] (./SPH_thesis.bbl
+[133
 
 
 
-] [124] [125] [126]
+] [134] [135] [136]
 LaTeX Font Info:    Try loading font information for OML+ptm on input line 364.
 
 
@@ -3843,18 +3855,18 @@ LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 364.
 )
 
-Package caption Warning: Unused \captionsetup[caption] on input line 358.
+Package caption Warning: Unused \captionsetup[caption] on input line 391.
 See the caption package documentation for explanation.
 
-[127]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1773.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1773.
+[137]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1853.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1853.
  (./SPH_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1773.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1773.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1853.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1853.
 
 Package rerunfilecheck Info: File `SPH_thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 27CBCE0418D541C11BD1D88714E54A25;2840.
+(rerunfilecheck)             Checksum: 5111497986D900283C3C0F74C699C4D2;3619.
 
 
 LaTeX Warning: There were undefined references.
@@ -3862,16 +3874,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1773.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1853.
  ) 
 Here is how much of TeX's memory you used:
- 37060 strings out of 492649
- 735206 string characters out of 6129622
- 895022 words of memory out of 5000000
- 39715 multiletter control sequences out of 15000+600000
- 604652 words of font info for 329 fonts, out of 8000000 for 9000
+ 37162 strings out of 492649
+ 736843 string characters out of 6129622
+ 902610 words of memory out of 5000000
+ 39771 multiletter control sequences out of 15000+600000
+ 605001 words of font info for 339 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,27n,104p,10381b,990s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,27n,104p,10381b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -3884,10 +3896,10 @@ dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on SPH_thesis.pdf (147 pages, 25526318 bytes).
+Output written on SPH_thesis.pdf (157 pages, 34638340 bytes).
 PDF statistics:
- 1699 PDF objects out of 1728 (max. 8388607)
- 1264 compressed objects within 13 object streams
- 362 named destinations out of 1000 (max. 500000)
- 52037 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1807 PDF objects out of 2073 (max. 8388607)
+ 1358 compressed objects within 14 object streams
+ 386 named destinations out of 1000 (max. 500000)
+ 52127 words of extra memory for PDF output out of 61914 (max. 10000000)
 
