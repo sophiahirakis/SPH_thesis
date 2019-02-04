@@ -507,29 +507,32 @@ As we scale up from atoms to molecules in living systems, the next "step" is tow
 
 As its name indicates, electron tomography uses an electron beam as its source of a penetrating wave of energy. Tomography is an imaging technique that "sections" or penetrates the object being visualized. In the case of electron tomography, a biological specimen undergoes a tilt-series, where the sample is exposed to the beam at different angles resulting in different projections of the specimen \cite{Fridman2012,Koning2018}. The specimen itself is fixed with chemicals that "lock-in" the physical structure and stained with heavy metals that increase the contrast of lipids and proteins. Gold particles are often used as fiduciary markers to align projections. Upon alignment, the boundaries of important structures are traced and used for reconstruction on the subvolumes \cite{Yu2008,Lee2018}.
 
-Three-dimensional reconstructions of subcellular volumes are used in this thesis to understand the dynamics of calcium signaling in cardiac tissue\cite{Hayashi2009}. In the fourth chapter these realistic geometries are used as a framework within which we reconstitute the biochemical reactions that underly calcium signaling. More details will be given on this in the final section of the introduction.   
+Three-dimensional reconstructions of subcellular volumes are used in this thesis to understand the dynamics of calcium signaling in cardiac tissue\cite{Hayashi2009}. In the fourth chapter these realistic geometries are used as a framework within which we reconstitute the biochemical reactions that underlie calcium signaling. More details will be given on this in the final section of the introduction.   
 
-\section{Biophysical Structural Modeling Methodologies}
-Studying the dynamics of biomolecules is no simple feat. Proteins are incredibly small and their relevant motions are fast. The oftentimes too fast to study with available technology. 
+\section{Biophysical structure modeling methodologies}
+Studying the dynamics of biological systems is no simple feat. Proteins are incredibly small and their relevant motions are fast. The oftentimes too fast to study with available technology. F
 
 \subsection{Molecular Dynamics}
 Since the late 70's, computers have been used in the field of biochemistry, providing visual insights into dynamics of proteins\cite{McCammon1979}. 
-
- 
+\begin{equation}
+    V ( \mathbf { r } ) = \sum _ { \text { bonds } } k _ { r } \left( r - r _ { \mathrm { eq } } \right) ^ { 2 } + \sum _ { \text { angles } } k _ { \theta } \left( \theta - \theta _ { \mathrm { eq } } \right) ^ { 2 } + \sum _ { \text { difinedrals } } \frac { V _ { n } } { 2 } [ 1 + \cos ( n \phi - \gamma ) ] + \sum _ { i < j } \left[ \frac { A _ { i j } } { R _ { i j } ^ { 12 } } - \frac { B _ { i j } } { R _ { i j } ^ { 6 } } \right] + \sum _ { i < j } \frac { q _ { i } q _ { j } } { \epsilon R _ { i j } }
+\end{equation}
 \subsection{Brownian Dynamics}
-\begin{comment}
 
-\section{Subcellular Modeling}
+
+\section{Biochemical modeling methodologies}
 
 \subsection{Ordinary Differential Equations}
 
 \subsection{Monte Carlo Spatial Modeling}
 
-\end{comment}
 
-The following body of work examines cardiac function and dysfunction from the  perspective of proteins. This is no trivial feat, as cardiac dysfunction can occur at multiple scales of space and time. What is meant by the term "multiscale?" How are these scales examined? How do changes at one spatiotemporal scale translate, resulting in heart disease? 
+\begin{comment}
+The following body of work examines cardiac function and dysfunction from the perspective of proteins. This is no trivial feat, as cardiac dysfunction can occur at multiple scales of space and time. How are these scales examined? How do changes at one spatiotemporal scale translate, resulting in heart disease? 
 
  On the level of cardiac muscle, blood flow can become altered causing damage to the tissue known as an infarct. On the level of the cells, which collectively make up cardiac tissue, disease causes cellular membranes to become reorganized. On the scale of the building blocks which make up the cells, proteins become misaligned and chemical signals in the form of Calcium ions are improperly sorted. 
+\end{comment}
+
  
  
 \end{dissertationintroduction}
