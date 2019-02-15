@@ -6,12 +6,22 @@
 \usepackage{cite}
 \usepackage[NoDate]{currvita}
 \usepackage{array}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{booktabs}
+%\usepackage{caption}
+%\captionsetup[figure]{font=small}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{mathtools, nccmath}
 %\usepackage{hyperref}
+%\usepackage{dblfloatfix}    % To enable figures at the bottom of page
+%\usepackage[demo]{graphicx} % [demo] option for empty figure
+%\usepackage{kantlipsum}     % for random text
 \usepackage{ragged2e}
 \usepackage{subcaption}
+\usepackage{amsmath}
 \usepackage{microtype}
+\usepackage{multicol}
 \usepackage[breaklinks=true,pdfborder={0 0 0}]{hyperref}
 \usepackage{graphicx}
 %\usepackage{subfig}
@@ -57,7 +67,7 @@
 \title{Multiscale analysis and visualization of biophysical structure and biochemical function with\\ computational microscopy}
 %Visualization of biophysical structure and biochemical function in multiple scales \\with computational microscopy}
 \author{Sophia P. Hirakis}
-\degree{Chemistry \\ with a PhD Specialization in \\ Multiscale Biology}{Doctor of Philosophy}
+\degree{Chemistry \\ with a Specialization in \\ Multiscale Biology}{Doctor of Philosophy}
 % Each member of the committee should be listed as Professor Foo Bar.
 % If Professor is not the correct title for one, then titles should be
 % omitted entirely.
@@ -83,9 +93,9 @@
 \raggedright % It would be better to use \RaggedRight from ragged2e
 \parindent0pt\parskip\baselineskip
 \begin{center}
-\vspace{0.5in}
+\vspace{0.3in}
 I am fortunate to have been blessed with two angels, \\who each provided me with one wing so that I could fly.. \\
-\vspace{0.5in} 
+\vspace{0.4in} 
 \textbf{I dedicate this work to my parents}
 \vspace{0.1in}
 \\ To my beloved father, my baba, \\$\pi\alpha\tau\acute{\epsilon}\rho\alpha$ $\mu$o$\upsilon$ \\ \textit{Petros Emmanuel Hirakis} \\Thank you for being an example of humility and hard work. \\ \vspace{0.1in}
@@ -101,14 +111,15 @@ My aunt, \textit{Theodosia Prearis Dargakis}\\
 My uncle, \textit{George Dargakis}\\
 My heroic fighter, \textit{Anthony "Tony" Chester Miller}\\
 My father-figure, \textit{George J. Tsimiklis}\\
+My Johnny boy, \textit{John LaBarbera}\\
 My dear friend, \textit{Vasilios N. Diakokomninos}\\
-My sweetest brotha from anotha, \textit{Matthew G. Walker}\\
+My brotha, \textit{Matthew G. Walker}\\
 My sea sister, \textit{Sophia Tiar$\acute{e}$ Bartlow}\\
 My beloved chemistry professor, \textit{Brother Andrew Joseph Winka}\\
 My fearless microscopy professor, \textit{Gina Sosinsky}\\
 and My almost-colleague, \textit{Anushka Michailova}\\
 
-\vspace{0.1in}
+\vspace{0.2in}
  Finally, I dedicate my thesis to the youth of Greece\\ whose future remains bright despite our tribulations\\ and to the everlasting life of the village of\\ \textbf{Olympos, Karpathos}
 \end{center}
 
@@ -176,8 +187,8 @@ LIST OF SYMBOLS AND ACRONYMS
 %$\theta$ \\ \footnotesize \centering  angle\\
 \si{\angstrom} \tab[5.45cm]Angstrom\\
 AP \tab[5.15cm]Action Potential\\
-BD \tab[5.2cm]Brownian Dynamics\\
-cAMP \tab[4.65cm]Cyclic Adenosine Monophosphate\\
+BD \tab[5.15cm]Brownian Dynamics\\
+cAMP \tab[4.6cm]Cyclic Adenosine Monophosphate\\
 CBD \tab[4.86cm]Cyclic-nucleotide Binding Domain\\
 CMDN\tab[4.54cm]Calmodulin\\
 CRU \tab[4.74cm] Calcium Release Unit\\
@@ -189,14 +200,14 @@ LTCC\tab[4.8cm]L-Type Calcium Channel\\
 HVR \tab[4.7cm]  Hyper-Variable Region\\
 MD \tab[5cm]Molecular Dynamics\\
 MSM \tab[4.7cm]Markov State Model\\
-NCX \tab[4.7cm] Na\textsuperscript{+}\textbackslash Ca\textsuperscript{2+} exchanger\\
+NCX \tab[4.7cm] Na\textsuperscript{+}/ Ca\textsuperscript{2+} exchanger\\
+ODE \tab[4.84cm]Ordinary Differential Equation\\
+PDE \tab[4.87cm]Partial Differential Equation\\
 PKA \tab[4.85cm]Protein Kinase A\\
 PMCA \tab[4.5cm]Plasma Membrane Ca\textsuperscript{2+} ATPase\\
-PSO \tab[4.9cm]Particle Swarm Optimization\\
 RyR \tab[4.9cm]Ryanodine Receptor\\
 SAXS \tab[4.6cm]Small-Angle X-ray Scattering\\
 SERCA \tab[4.33cm]Sarco/Endoplasmic Reticulum Calcium-ATPase\\
-TEM \tab[4.75cm]Transmission Electron Microscopy\\
 TT \tab[5.15cm]Transverse Tubule\\
 WT \tab[5.02cm]Wild-Type\\
 
@@ -220,28 +231,33 @@ WT \tab[5.02cm]Wild-Type\\
 
 % Preface
 \begin{preface}
-I begin this thesis with a feeling of mischievous satisfaction. As a child, I trained as an actor and learned to improvise in order to thwart and evoke emotion in my audience. This was my coping mechanism, of sorts, for an awkward and over-zealous personality. But to my core, I am nothing more than an artist. The truth is that during the course of my "acting" career, I fooled \textit{a lot} of people into thinking that I was a scientist, but I am an artist at my core. 
+I begin this thesis with a feeling of mischievous satisfaction. As a child, I trained as an actor and learned to improvise in order to evoke emotion in my audience. This was my coping mechanism, of sorts, for an awkward and over-zealous personality. But, at my core, I am nothing more than \textbf{an artist.} The truth is that during the course of my "acting" career, I fooled \textit{a lot} of people into thinking that I was a scientist, including myself. 
 
-I sang before I could speak, danced before I could walk, and played with anything made sound. Music was not explicitly encouraged by my father. To buy my first guitar, he made me save my money and I did so, buying it myself at 13. $\Pi\acute{\epsilon}\tau\rho$o$\varsigma$, my father, pushed me towards a career in medicine and I studied hard in order to appease him. From my father, I inherited a thirst for challenges and expanding my boundaries which allowed me to excel, and from my grandfather, M$\eta\nu\acute{\alpha}\varsigma$ an obsession with music, which distracted me fully. My grandfather was not fondest of my educational pursuits, offering marriage as the "logical" solution. But my grandmother pushed me to continue with my education to achieve the dream that she could never achieve. 
+I sang before I could speak, danced before I could walk, and played with anything made sound. Music was not explicitly encouraged by my father. To buy my first guitar, he made me save my money and I did so, buying it myself at 13 with money that I earned from tutoring.  $\Pi\acute{\epsilon}\tau\rho$o$\varsigma$, my father, pushed me towards a career in medicine and I studied hard in order to appease him. From my father, I inherited a thirst for challenges and expanding my boundaries which allowed me to excel, and from my grandfather, M$\eta\nu\acute{\alpha}\varsigma$ an obsession with music, which distracted me fully. My grandfather was not fondest of my educational pursuits, offering marriage as the "logical" solution. But my mother and grandmother pushed me to continue with my education to achieve the dreams that they could never achieve. 
 
-In our village, $\acute{O}\lambda\upsilon\mu\pi$o$\varsigma$ \textit{K}$\alpha\rho\pi\acute{\alpha}\theta$o$\upsilon$, more than 80\% of women never complete high school. This meant that my grandmother longed for an education that she never completed. Despite the precedent, my grandmother always encouraged me to pursue my education.
+In our village, $\acute{O}\lambda\upsilon\mu\pi$o$\varsigma$ \textit{K}$\alpha\rho\pi\acute{\alpha}\theta$o$\upsilon$, more than 80\% of women never complete high school. This meant that my grandmother longed for an education that she never had the opportunity to have. Despite the precedent, my grandmother always encouraged me to pursue my education. My mother was married with a child at the age of 21, and she never completed college either. My grandfather never learned to formerly read and write in an academic sense, and my father never completed grade school. I had no precedent, but I \textit{did} have encouragement,  
 
-Having gone to school in Greece during my early years and Greek schools throughout my primary education, the Socratic method-dialogue during the process of learning-interruptions in our classrooms was common. But my tendency towards hyper-stimulation always caused me to ask "too many questions." Most American teachers found it disruptive, but in the 9th grade, Ms. Primm asked me to stay after class; what I thought would be some form of reprehension to which I was accustomed. Instead, she told me that I "asked the best questions that she ever heard from a student." She encouraged me to become a scientist too, instilling within me the most important thing I've carried throughout my educational career: belief in myself.
+Having gone to school in Greece during my early years and Greek schools throughout my primary education, the Socratic method-dialogue, also known as "conversational learning" or "learning with interruptions" was common. But my tendency towards hyper-stimulation always caused me to ask "too many questions." Most American teachers found it disruptive, but in the 9th grade, Ms. Primm asked me to stay after class; what I thought would be some form of reprehension to which I was accustomed. Instead, she told me that I "asked the best questions that she ever heard from a student." She encouraged me to become a scientist too, instilling within me the most important thing I've carried throughout my educational career: belief in myself. She was the first person that made me see myself as a scientist and helped me begin a journey that began with biology, seeded in chemistry, and flourished with physics.
 
-My love affair with physics began at 4 AM on a June summer night of 2012, while laying on a couch in Baltimore, MD, USA.  Exhausted from his shift at Hilltop Carry-out, my $\sigma\upsilon\gamma\chi\omega\rho\iota\alpha\nu\acute{o}\varsigma$ \textit{E}$\lambda\upsilon\mu\pi\acute{\iota}\tau\eta\varsigma$ (fellow villager of Olympos) and dear friend Minas Giorgakis laid in his bed and put on a documentary for me to watch  \textit{about the mysteries of the universe} in hopes of occupying me enough so that he could get some sleep.  
+My love affair with physics began at 4 AM on a June summer night of 2012, while laying on a couch in Baltimore, MD, USA.  Exhausted from his shift at Hilltop Carry-out, my $\sigma\upsilon\gamma\chi\omega\rho\iota\alpha\nu\acute{o}\varsigma$ \textit{E}$\lambda\upsilon\mu\pi\acute{\iota}\tau\eta\varsigma$ (fellow villager of Olympos) and dear friend Minas Giorgakis laid in his bed and put on a documentary for me to watch \textit{about the mysteries of the universe} in hopes of occupying me enough so that he could get some sleep.  
 \begin{center}
 I fell deeply in love. 
 \end{center}
-\tab[0.7cm] The vastness of the universe humbled me. The idea of combining chemistry with physics excited me. Just a year before, I was awarded a Bachelors degree in Biochemistry from Manhattan College, and was admitted to the PhD program at the University of California, San Diego, my dream school. After \textit{seeing} the vastness of the universe, I found myself looking for professors to work with in the department that studied cosmic chemistry. I quickly changed my mind when I realized that those beautiful fly-through images of space took decades to acquire knowledge about. I was reminded of the advice of my beloved Physical Chemistry professor, Jianwei Fan, PhD: "\textit{Sophia, stick to your strengths.}"\\
-\tab[0.7cm]At first, I was offended by Dr. Fan's suggestion that I stick to the study of organic chemistry, though I admittedly had intuition for synthesis. The Greeks have a word for my response: $\pi\varepsilon\acute{\iota}\sigma\mu\alpha$ (peizma). This word, with its many meanings, leads me to encourage the reader to decide upon a definition for themselves. With $\iota\sigma\chi\upsilon\rho$o$\gamma\nu\omega\mu$o$\sigma\acute{\upsilon}\nu\eta$ (ishchyrognomosini), a bull-headed will and stubbornness, I decided I would take the middle road, combining my love for biochemistry with my thirst to understand why we observe what we do, in the study of biophysics.\\
+
+The vastness of the universe humbled me. The mere idea of combining chemistry with physics excited me. Just a year before, I was awarded a Bachelors degree in Biochemistry from Manhattan College, and was admitted to the PhD program at the University of California, San Diego, my dream school. After \textit{bearing witness to} the vastness of the universe, I found myself looking for professors to work with in the department that studied cosmic chemistry. I quickly changed my mind when I realized that those beautiful fly-through images of space took decades to systematically study and acquire knowledge about. I was reminded of the advice of my beloved Physical Chemistry professor, Jianwei Fan, PhD: "\textit{Sophia, stick to your strengths.}"\\
+
+
+At first, I was offended by Dr. Fan's suggestion that I stick to the study of organic chemistry, though I admittedly had intuition for synthesis. The Greeks have a word for my response: $\pi\varepsilon\acute{\iota}\sigma\mu\alpha$ (pe$\acute{i}$zma). I encourage the reader to decide upon a definition for this poly-semantic word. With $\iota\sigma\chi\upsilon\rho$o$\gamma\nu\omega\mu$o$\sigma\acute{\upsilon}\nu\eta$ (ishchyrognomos$\acute{i}$ni), a bull-headed will and stubbornness, I decided I would take the middle road, combining my love for biochemistry with my thirst to understand why we observe what we do, in the study of biophysics.\\
 \tab[0.7cm]I packed up my life in my 2007 Spyder Eclipse named "Angie" after the legendary Rolling Stones song and along with my best friend, Yianna (Rodriguez) Zois, took off on a ten day adventure to go to the place I always wanted to be, San Diego, California, USA. The brisk air, the green mountains; those sandy valleys and glorious sunsets of San Diego acted as a mere substitute for the place which I had never been able to call home, my beloved Karpathos.\\
 \tab[0.7cm]In retrospect, I  sometimes wish I \textit{had} listened to Dr. Fan. I often wish that I took Dr. (Kyriacos Costas) K.C. Nicolaou's invitation to join his lab at Scripps. I would have likely finished my PhD earlier, since I had a strength for synthesis; but the number of gray hairs in exchange for total synthesis over biophysics might never be known. \\
 \tab[0.7cm] But something drew me to biophysics--the ability to "see" what I learned about as a biochemist. Using mathematically-accurate artistic and computational approximations of proteins and cells, I could finally fully understand the concepts that Dr. Chiara Indiani drilled deep into my mind. It felt intuitive to examine proteins and see how their secondary structure was disrupted by molecular motions. The challenges, however, were more than I anticipated.\\
-\tab[0.7cm]The learning curve for biophysics was \textit{incredibly} steep. In addition to the complexities of the mathematics I was learning, I suffered endlessly by exchanging "a" with $\alpha$ and "b" with $\beta$, a pain that my beloved professor Katja Lindenberg found comical, since Greek is my first language. But at the end of statistical mechanics, I had the pleasure of understanding the elegance with which quantum mechanics and physical chemistry describe molecular motion with each integration of passing time-steps. I had my heart set on biophysical chemistry, but still I yearned for more. I yearned to apply my understanding of biochemistry to the complexities of diseases.\\
+\tab[0.7cm]The learning curve for biophysics was \textit{incredibly} steep. In addition to the complexities of the mathematics I was learning, I suffered endlessly by exchanging "a" with $\alpha$ and "b" with $\beta$, a pain that my beloved professor Katja Lindenberg found comical, since Greek is my first language. But at the end of statistical mechanics, I had the pleasure of understanding the elegance with which quantum mechanics and physical chemistry describe molecular motion with each integration of each time step. This, "mathematical magic" coupled with my ability to visualize the biophysical implications of system alterations on the level of the protein convinced me that I was on the right path.  I had my heart set on biophysical chemistry, but still I yearned for more. I yearned to apply my understanding of biochemistry to the complexities of diseases.\\
 \tab[0.7cm]Early on in my life, I developed a kind of \textit{obsession} with identifying and understanding illnesses. This started as soon as I could read. My mother had a book by H. Winter Griffith called "A Complete Guide to Pediatric Symptoms, Illnesses and Medications." I would often find myself correlating  my siblings' symptoms to illnesses suggesting doctors visits, way before WebMD was a thought. My curiosity blossomed in my later years as I learned more about biology and the ways that mutations lead to phenotypical differences that cause diseases; diseases that I would one day witness the real effects of.\\
-\tab[0.7cm]In college, I worked for over a year in the Department of Surgical Pathology at Montefiore Medical Center where I dissected human organs. Morbid, I know but I worked with diseased organs daily, trying to understand \textbf{why} patients were sick. It was here that I learned the true meaning of multiscale. 
+\tab[0.7cm]In college, I worked for three years in the Department of Surgery Research at Johns Hopkins University Bayview Medical Center. In partnership with the Firefighters Association of Baltimore, MD, we aimed to treat burn wounds on animals and humans with the use of protein cocktails. As a biochemist interested in serious medical conditions, this fascinated me--the concept that small proteins (nm) could heal damaged tissues for the regeneration of skin cells to form collagen and hair follicles to generate $\alpha$-keratin. I later worked in the Department of Surgical Pathology at Montefiore Medical Center where I dissected human organs. Morbid, I know but I worked with diseased organs daily, trying to understand \textbf{why} patients were sick. It was here that I learned the true meaning of multiscale biochemistry. 
 
+Like true scientists, after receiving any surgically removed organ during or after surgery, we followed a very strict protocol. The organ would be measured, visually described, and the description dictated to a computer directly into a pathology report. The organ would be fixed in a fixation agent, like formaldehyde, in order to preserve the ultrastructure of the specimen. Successive dissections dependent on the tissue type would be made until an interesting characteristic was identified. This could be, for instance, a calcification of tissue or necrosis of a major artery. My job was to identify the morphology of the disease on the cellular level using a light microscope. In this way, the multiscale nature of disease was revealed to me. 
 
+This experience sparked within me a desire to understand the cause of diseases. In graduate school, my advisor, Dr. Rommie E. Amaro gave me an opportunity to do just this in a way that I could have never imagined. Using a unique set of computational tools, I have learned to tease out the factors that underlie diseases. The most satisfying part of this experience is the use of tools that allow you to visually interpret the results of our experiments. 
 
 \end{preface}
 
@@ -267,45 +283,79 @@ publication of the material. \textbf{\underline{Hirakis, Sophia P.}};  Bartol, T
 
 \end{acknowledgements}
 
-% Stupid vita goes next
+%Vita goes next
 \begin{vita}
 \noindent
 \begin{cv}{}
 \begin{cvlist}{}
 \item[2011] Bachelor of Science in Biochemistry, Manhattan College, Riverdale, NY
-\item[2012-2015] Teaching Assistant, Department of Chemistry and Biochemistry\\University of California, San Diego
-\item[2012-2014] Master of Science in Chemistry, University of California, San
+\item[2012-2015] Teaching Assistant, Department of Chemistry and Biochemistry\\University of California San Diego
+\item[2012-2015] Master of Science in Chemistry, University of California San
 Diego
-\item[2012-2018] Research Assistant, University of California, San
+\item[2012-2019] Research Assistant, University of California San
 Diego
-
+\item[2019] Doctor of Philosophy in Chemistry, University of California San
+Diego
 \end{cvlist}
 \end{cv}
 
 % This puts in the PUBLICATIONS header. Note that it appears inside
 % the vita environment. It is optional.
-
 \publications
 
 \noindent \textbf{\underline{Hirakis, Sophia P.}}; Bartol, Thomas M.; Sejnowski, Terrence J.; Amaro, Rommie E.; "Molecules to Membranes: The Calcium Release Unit." Biophysical Journal, 2018, 114(3),  pp. 118a.
 
-\noindent \\ \textbf{\underline{Hirakis, Sophia P.}}; Malmstrom, Robert D.; Amaro, Rommie E.; "Molecular Simulations Reveal an Unresolved Conformation of the Type IA Protein Kinase A Regulatory Subunit and Suggest its Role in the cAMP Regulatory Mechanism." Biochemistry, 2017, June 29; 56 (30), pp 3885–3888.
+\noindent \\ \textbf{\underline{Hirakis, Sophia P.}}; Malmstrom, Robert D.; Amaro, Rommie E.; "Molecular Simulations Reveal an Unresolved Conformation of the Type IA Protein Kinase A Regulatory Subunit and Suggest its Role in the cAMP Regulatory Mechanism." Biochemistry, 2017, June 29; 56 (30), pp 3885-3888.
 
-\noindent \\McCullagh, James V. and \textbf{\underline{Hirakis, Sophia P.}}; "Synthesis of the Commercial Fragrance Compound Ethyl 6-Acetoxyhexanoate: A Multistep Ester Experiment for the Second-Year Organic Laboratory." Journal of Chemical Education, 2017, June 29; 94 (9), pp 1347–1351.
+\noindent \\McCullagh, James V. and \textbf{\underline{Hirakis, Sophia P.}}; "Synthesis of the Commercial Fragrance Compound Ethyl 6-Acetoxyhexanoate: A Multistep Ester Experiment for the Second-Year Organic Laboratory." Journal of Chemical Education, 2017, June 29; 94 (9), pp 1347-1351.
 
 \noindent \\Buffalo, Cosmo Z.; Bahn-Suh, Adrian J.; \textbf{\underline{Hirakis, Sophia P.}}; Biswas, Tapan; Amaro, Rommie E.; Nizet, Victor; Ghosh, Partho; "Conserved Patterns hidden within group A Streptococcus M protein hypervariability are responsible for recognition of human C4b-binding protein." Nature Microbiology, 2016, September 5; 1:16155.
 
-\noindent \\Boras, Britton W.; \textbf{\underline{Hirakis, Sophia P.}}; Votapka, Lane W.; Malmstrom, Robert D.; Amaro, Rommie E.; McCulloch, Andrew D.;"Bridging scales through multiscale modeling: a case study on protein kinase A." Frontiers in Physiology, 2015, September 9; 6:250. 
+\noindent \\Boras, Britton W.; \textbf{\underline{Hirakis, Sophia P.}}; Votapka, Lane W.; Malmstrom, Robert D.; Amaro, Rommie E.; McCulloch, Andrew D.;"Bridging scales through multiscale modeling: a case study on protein kinase A." Frontiers in Physiology, 2015, September 9; 6:250.
+
+\noindent \\Keating, Tedd; \textbf{\underline{Hirakis, Sophia P.}}; McBride, Nicole; "Perceiving the center of Human Figures." Proceedings and Abstracts of the Annual Meeting of the Eastern Psychological Association, March 6, 2012; vol 81, pp s97.
+
+\noindent \\ Friedenberg, Jay D.; Keating, Tedd; \textbf{\underline{Hirakis, Sophia P.}}; Toscano, Lisa; "The Effects of a Typical In-season Practice Session on Peak Ground Forces and Select Kinematic Variables in Women's Division I Basketball Players." Journal of Strength and Conditioning Research, February, 2012; vol 23, pp 87.
 \vspace{5mm}
 
 
 % This puts in the FIELDS OF STUDY. Also inside vita and also
 % optional.
-%\fieldsofstudy
-%\noindent Major Field: Engineering (Specialization or Focused Studies)
-%\vskip\baselineskip
-%Studies in Applied Mathematics\par
-%Professors Alpha Beta and Gamma Delta
+\fieldsofstudy
+\noindent Major Field: Chemistry and Biochemistry (Specialization in Multiscale Biology)
+\vskip\baselineskip
+Studies in Biophysical Chemistry\par
+Professor Rommie E. Amaro
+\vskip\baselineskip
+Studies in Computational Biology\par
+Professor Terrence J. Sejnowski
+
+
+\vskip\baselineskip
+\noindent Major Field: Surgery and Medicine
+\vskip\baselineskip
+Studies in Surgical Research\par
+Professors Guy Marti, M.D., John Harmon, M.D.
+\vskip\baselineskip
+Studies in Emergency Medicine and Toxicology\par
+Professor Joseph LaMantia, M.D.
+
+\vskip\baselineskip
+\noindent Major Field: Synthetic Chemistry and Chemical Education
+\vskip\baselineskip
+Studies in Synthetic Organic Chemistry\par
+Professor James V. McCullagh, Ph.D.
+
+\vskip\baselineskip
+\noindent Major Field: Kinesiology and Cognitive Perception
+\vskip\baselineskip
+Studies in Kinesiology\par
+Professor Tedd Keating, Ph.D.
+\vskip\baselineskip
+Studies in Cognitive Perception\par
+Professor Jay D. Friedenberg, Ph.D.
+
+
 %\vskip\baselineskip
 %Studies in Mechanics\par
 %Professors Epsilon Zeta and Eta Theta
@@ -322,15 +372,7 @@ Diego
 \begin{dissertationabstract}
 \vspace{0.3pt}
 
-This work focuses on the use of multiple spatiotemporal simulation scales used to \textit{visualize and further understand} biological phenomena. It is centered on the structure and function of proteins and subcellular mechanisms driving cardiac function and dysfunction. In the first chapter, we address the concept of multiscale biological simulations, integrating information from atomistic scales toward cellular models of Protein Kinase A. The second chapter demonstrates the ways that atomistic simulations can be applied to the study of the structural interactions in protein-protein complexes vital to the infectious mechanisms of Group-A \textit{Streptococcus}. In the third chapter, two scales of biological simulation are used in tandem in order to understand the structure and the kinetic behavior of Protein Kinase A RI$\alpha$. The final chapter incorporates the kinetic understanding of every species in a subcellular geometry in order to understand signaling mechanisms in cardiac activation.  
-
-
-% The evasive cause of diseases is oftentimes \textit{smaller than you think}. Imagine, though, chasing something that you can't actually \textit{see}. This is the plight of almost all scientists whose study does not involve the use of a microscope. Fortunately for the modern-day biomedical scientist, computational advancements harnessing the near-limitless potential of mathematics in the language of physics are able to \textit{see the unseen}.
-% Computational microscopy is a tool developed by thousands of talented scientists that yields the power of visualization to the scientist seeking to visually understand biological systems. With progressive advancements in the power of computer graphics and the development of mathematical theories to explain biological behavior, computational microscopy is incessantly and obsessively refined by thousands of scientists throughout over the greater half of the last century.
-% Using this powerful tool, the artist within the scientist is able to visualize what they know in their mind's eye to be true through their experiments. It also allows scientific discoveries to be translated without the explicit use of language for those with the ability to see.
-% With respect to diseases, the culprit is oftentimes an atomic-level alteration that has a butterfly effect throughout the cell, scaling up through space and time to affect organs and eventually, the whole organism. In accordance with its name, the computational microscope not only allows us to visualize extremely small entities like atoms, molecules, proteins, cells, and the like. But it is especially unique, as it allows us to scale through time to the appropriate perspective in order to understand the dynamics of the system we seek to "see". Like a biophysically detailed time-lapse, we are able to \textit{see through time}, the development of a microscopic system and compare how small changes can have large-scale effects. Depending on the system, the spatiotemporal scale of the system in question is variable. In this thesis, the computational microscope is applied to multiple systems 
-
-Namely, a molecule that affects the regulation of the sub-cellular mechanisms of the heart, Protein Kinase A is the subject of extensive study. A second molecule, Group A \textit{Streptococcus} is a bacterial surface protein which affects soft tissue like the heart and the skin as a necrotizing fasciitis, or flesh-eating disease.
+The evasive source and cause of diseases is oftentimes \textit{smaller than you think}. Imagine, though, chasing something that you can't actually \textit{see}. Fortunately for the modern-day biomedical scientist, computational tools harnessing the power of physics using the language of mathematics are able to \textit{see the invisible}. Computational microscopy is a tool developed to visualize the energetic behavior of biological systems. With progressive advancements in computer graphics and the development of mathematical theories to explain biological behavior, computational microscopy has become a useful tool used by many kinds scientists over the greater half of the last century to understand the energetic underpinnings of a system's behavior. Unlike most "microscopes," it allows us to visualize extremely small entities like atoms, molecules, proteins, and cells. More importantly, it allows us to spatiotemporally transcend scales to understand the dynamics of our systems. Like a biophysically detailed time-lapse, we are able to \textit{see through time}, to understand chemical "butterfly effects" that transcend the time and space scale at which they operate. In this thesis, the computational microscope is applied to multiple systems to \textit{visualize and analyze} the physicochemical mechanisms that underlie biological function. Specifically, the thesis is centered on the structure of proteins and subcellular mechanisms driving cardiac function and dysfunction. In the first chapter, we address the concept of multiscale biological simulations, integrating information from atomistic scales toward cellular models of Protein Kinase A. The second chapter demonstrates the ways that atomistic simulations can be applied to the study of the structural interactions in protein-protein complexes vital to the infectious mechanisms of Group-A \textit{Streptococcus}. In the third chapter, two scales of biological simulation are used in tandem to understand the structure and the kinetic behavior of Protein Kinase A RI$\alpha$. The final chapter incorporates the kinetic understanding of relevant species in a realistic subcellular geometry to investigate signaling mechanisms that underlie calcium activation in healthy and diseased hearts. Particular attention is paid to the way that structural alterations on the atomistic, molecular, and membranous level alter the behavior of biological systems. Holistically, this thesis is centered on the use of computational tools and the development of realistic models that can reproduce experimental findings and predict the behavior of systems, driving the creation of new hypotheses. 
 
 \end{dissertationabstract}
 
@@ -343,48 +385,63 @@ Namely, a molecule that affects the regulation of the sub-cellular mechanisms of
 %  Introduction
 \begin{dissertationintroduction}
 %\counterwithin{figure}{section}
+\counterwithin{equation}{chapter}
 
-The Greek word, $\pi$o$\lambda\upsilon\sigma\acute{\eta}\mu\alpha\nu\tau\alpha$ (poly-s\^em-anta) translates to the phrase: a symbol or word that has multiple meanings. Depending on where the accent is located in Greek and other accented languages, the meaning of a word can change drastically. As such, words can be misinterpreted when translating from one language to another, especially because of the sociological implications of the passage of time. From this phenomenon stems so much of the world's fascination with science, the cycle of observation and theoretical inquiry. Curious minds have learned \textit{simply} that words cannot properly encapsulate the meaning of something fully. Rather, it is \textit{feeling and bearing witness} that satisfies the understanding that the mind craves. 
+The Greek word, $\pi$o$\lambda\upsilon\sigma\acute{\eta}\mu\alpha\nu\tau\alpha$ (poly-s\^em-anta, english: polysemantic) translates to the phrase: a symbol or word that has multiple meanings. Depending on where accents are located in Greek and other accented languages, the meaning of a word can change completely. As such, words can be misinterpreted when translating from one language to another, especially because of the sociological implications of the passage of time. From this phenomenon stems so much of the world's fascination with science: the cycle of observation and theoretical inquiry. Curious minds have learned \textit{simply} that words cannot properly encapsulate the meaning of something fully. Rather, it is \textit{feeling and bearing witness} that satisfies the understanding that the mind craves. 
 
-\begin{figure}
-\centering
-	\includegraphics[scale=0.1]{frequencies.jpeg}
-	\caption{A drawing of musical frequencies}
-	\subcaption{ A drawing of the high frequency, 440Hz musical note,"A" or "La" (red);\textbf{(b)} A drawing of the lower frequency, 294Hz musical note,"D" or "Re" (blue);\textbf{(c)} A drawing of the additive frequency of notes "A" and "D" to produce an amplitude that is equal the additive amplitudes of "A" and "D" when constructive; Adapted from freely available lessons by 3Blue1Brown.}
-\label{fig:frequencies of music} 
-\end{figure}
+A language exists, which is not subject to misinterpretation of translation, and that is the language of mathematics. From the first known records of mathematics which date back to approximately 3000 B.C.E. until now, what has been common between four sheep and four goats has always been their \textit{value}, equaling to 4. With common units of length, time, volume and the like, we can describe in exponential terms the quantitative scale of a value. Using mathematics, humans can describe the phenomena that we observe--from the attractive forces that govern the behavior of the smallest atom, to the revolution of planets in galaxies that are not our own.  What is more, mathematics allows us to tease out simple formulas that \textit{predict} the future state of a system. In simple terms, mathematics is used to encode, translate, and communicate \textit{energy}.
 
-A language exists, which is not subject to misinterpretation of translation, and that is the language of mathematics. From the first known records of mathematics which date back to approximately 3000 B.C.E. until now, what has been common between four sheep and four goats has always been their \textit{value}, equaling to 4. With common units of length, time, volume and the like, we can describe in exponential terms the quantitative scale of a value. Using mathematics, humans can describe the phenomena that we observe--from the attractive forces that govern the behavior of the smallest atom, to the revolution of planets in galaxies that are not our own. What is more, mathematics allows us to tease out simple formulas that \textit{predict} the future state of a system. 
-
-To understand the power of mathematics, we must lend some consideration to the ability to \textit{visualize} mathematical concepts; an example best demonstrated by examining one of the most amazing phenomenon known to mankind: the musical genius of Beethoven, \textbf{a deaf man}. How could it be possible for a man who could not \textit{\textit{hear sound}} to produce such melodic masterpieces? The answer is purely, the visualization of mathematics. Ludwig van Beethoven once said, 
+To understand the power of mathematics, we must lend some consideration to the ability to \textit{visualize} energetic concepts. This concept is best demonstrated by one of the most amazing phenomenon known to mankind: the musical genius of Beethoven, \textbf{a deaf man}. How could it be possible for a man who could not \textit{\textit{hear sound}} to produce such melodic masterpieces? The answer is simply, his ability to visualize sound energy. Ludwig van Beethoven once said, 
 
 \begin{center}
     "I always have a \textit{picture in my mind} when composing, and follow its lines."
 \end{center}
 
-Ludwig van Beethoven was able to see and feel the mathematical relationship of musical notes relative to one another.  In his quote, he proved to be true the reality that so many non-traditional artists and scientists live: a deepened understanding of something is somehow tied to ones ability to visualize it in their mind's eye. As the famous mathematician, James Joseph Sylvester once said, 
+Ludwig van Beethoven was able to see and feel the mathematical and energetic relationship of musical notes relative to one another, even though he could not hear them. His words allude to the existence of a phenomenon that so many non-traditional artists and scientists live: a deepened understanding of something is somehow tied to ones ability to \textit{feel it, and visualize it} in their mind's eye. The famous mathematician, James Joseph Sylvester once said, 
 
 \begin{center}
     "The musician feels mathematics, the mathematician thinks music: \\ music the dream, mathematics the working life."
 \end{center}
 
-Many of us do not know what it means to "visualize" music or mathematics. But, if you have the privilege of hearing, you may recognize the note commonly known as "A" or "La." If you used a pressure reader near the source of the sound of the note, the pressure recorder would record 440 beats per second, or 440 Hz. A visual form of this is the drawing shown in Figure 0.1. 
+\begin{figure}
+\centering
+        \includegraphics[scale=0.1]{frequencies.jpeg}
+        \caption{A drawing of musical frequencies}
+        \subcaption{ A drawing of the high frequency, 440Hz musical note,"A" or "La" (red);\textbf{(b)} A drawing of the lower frequency, 294Hz musical note,"D" or "Re" (blue);\textbf{(c)} A drawing of the additive frequencies of "A" and "D" to produce an complex wave function; Adapted from freely available lessons by 3Blue1Brown.}
+\label{fig:frequencies of music}
+\end{figure}
 
+Many of us do not know what it means to "visualize" energy, music, or mathematics. But, if you have the ability to hear sound, you may recognize the note commonly known as "A" or "La." If you used a pressure reader near the source of the note, the pressure recorder would record 440 energetic detections per second, or 440 Hz (see figure 0.1a). Lower frequencies like the note "D" or "Re" at 240 Hz have longer wavelengths (see figure 0.1b). One can only imagine that the "lines" that Beethoven referred to are the amplitudes of the frequencies. 
+
+If you have ever played a musical instrument, you may already know that these notes compliment each other nicely, a phenomenon known in music as a "harmonious interval." Practically, this means when the two wound waves, their wave behaviors sum to produce a complex wave (see figure 0.1b). This is but one example of how mathematics and art can be used to \textit{visualize} a physical phenomenon best described by the senses.
+
+It begs the question: how is one able to perceive the energies that surround them? The answer is quite complex but can be simplified with he following explanation: biological organisms are \textit{textbf{master detectors}}. Every organism, from single-celled bacteria to humans, to organisms that have yet to be discovered living in the deepest oceans and the highest peaks, have the ability to detect energetic changes in their environment in some form or another. 
+
+With properly functioning sensory faculties, we are able to perceive and interpret the energies around us, allowing us to respond to stimulii, learn, and adapt to our environment. This process, however, only works for phenomena that can be observed--at frequencies and energies that can be detected by our sensory systems. More often than not, interesting phenomena are too small/fast and large/slow to be observed and interpreted without aide of technology. Fortunately, the language of mathematics can be used to describe many observable and non-observable phenomena, allowing for contextualization and understanding by inquisitive minds.
 
 \section{Scaling up through the sciences}
-Our knowledge about the world around us has its roots in mathematics. The application of mathematics to the laws that govern the physical world is termed, \textit{physics}. The laws and theories of physics applied to the study of matter are collectively, \textit{chemistry}. The use of chemical principles used to describe living systems is \textit{biochemistry}. All of these disciplines are common in their use of mathematics to prove the principles that are upheld by what we are able to observe. 
+As noted earlier, our knowledge and understanding of the world around us is timelessly encoded in the language of \textit{mathematics}. The application of mathematics to the laws that govern the physical world is termed, \textit{physics}. The laws and theories of physics applied to the study of matter are collectively, \textit{chemistry}. The use of chemical principles used to describe living systems is \textit{biochemistry}. All of these disciplines are common in their use of mathematics to prove the principles that are upheld by what we are able to observe through our senses and detect with technology. 
 
-Oftentimes, biochemical systems become so complex that mathematical formulas become difficult to compute. For this, scientists use computational algorithms that describe and predict behaviors. But the more explicit we become in describing a system, come limits in computational power. In 1965, Gordon Moore published a paper entitled, "Cramming more components onto integrated circuits," \cite{Moore1965} where he first theorized about the relationship between the passage of time and the growth of computational power, known today as Moore's law. Over half a century later, our technological power has grown to a point where almost every person carries a small, powerful computer in their pocket, yielding access to volumes of up-to-date information at the mere decision of the user. Even still, biological systems are so complex and operate at such small time scales, that computational power is often the limiting factor in obtaining an answer to our questions. 
+Oftentimes, biological systems are too complex, and detailed mathematical descriptions of them become difficult to compute by hand. For this, scientists use computational algorithms that describe and predict behaviors. But the more explicit we become in describing a system, the more computational power we use. In 1965, Gordon Moore published a paper entitled, "Cramming more components onto integrated circuits," \cite{Moore1965} where he first theorized about the relationship between the passage of time and the growth of computational power, known today as Moore's law. Over half a century later, our technology has grown to a point where almost every person carries a small, powerful computer in their pocket that gives them access to volumes of up-to-date information at the mere decision of the user. Even still, biological systems operate so fast and at such small time intervals, that computational power is often the limiting factor in obtaining an answer to questions that scale beyond the spatiotemporal scale in question.
 
-Nevertheless, using the computational power we can presently harness combined with sophisticated mathematical algorithms, we computational biophysicists have created a powerful tool, \textit{the computational microscope}. 
+Nevertheless, using our currently available technology combined with sophisticated mathematical algorithms, we computational biophysicists have collectively created a powerful tool, \textit{the computational microscope}. Like a true microscope, we can choose a "magnification" or scale to visualize that which we seek to see. Using innovative methods for artistic rendering of atoms, proteins, and cells, the invisible suddenly becomes visible. Most importantly, we can see the biophysical ramifications of small changes that scale upwards, a biophysical butterfly effect.
 
-Like a true microscope, we can choose a "magnification" or scale to visualize that which our mind seeks to see. The invisible suddenly becomes visible. And most importantly, we can see the biophysical ramifications of small changes scale upwards through time. 
-
-With humility, I ask the reader: Join me in this journey across scales of microscopic biophysical space-time to see the unseen, through the lens of the computational microscope. 
+With humility, I ask the reader: join me in this journey across scales of microscopic biophysical space-time to see the unseen, through the lens of the computational microscope. 
 
 \section{The multiscale nature of biochemistry}
+
+The complexity of biological systems stems from the various scales of space and time within which they operate. In terms of the field of biochemistry, there are many levels that operate in unison to produce an observable phenomenon. This section will describe the various mechanisms that underlie structure in biochemical systems.
+
 \setcounter{figure}{1}
-\begin{wrapfigure}{r}{.37\textwidth}
+\begin{figure}
+%\centering
+	\includegraphics[scale=0.43]{Levels.png}
+	\caption{Levels of protein structure}
+	\subcaption{$\alpha$-helix structure;\textbf{(b)} Parallel $\beta$-sheet structure; \textbf{(c)} Tertiary structure of a protein comprised of $\beta$-barrels and an $\alpha$-helix}
+\label{fig:levels} 
+\end{figure}
+\begin{comment}
+\begin{wrapfigure}{r}{.45\textwidth}
     \begin{minipage}{\linewidth}
     \centering
     \captionsetup[subfigure]{justification=centering}
@@ -401,20 +458,20 @@ With humility, I ask the reader: Join me in this journey across scales of micros
 \end{minipage}
 \caption{Levels of protein structure}\label{fig:0}
 \end{wrapfigure}
-
-The complexity of biological systems stems from the various scales of space and time within which they operate. In terms of the field of biochemistry, there are many levels that operate in unison to produce an observable phenomenon. This section will describe the various mechanisms that underlie structure in biochemical systems.
+\end{comment}
 
 Firstly, \textit{atoms}, joined by attractive forces called bonds, link together to produce \textit{molecules} called \textit{amino acids} (also known as \textit{residues}). Atoms come in different sizes and shapes but are generally on the order of 1x$10^{-10}$m (1\si{\angstrom}). There are twenty different amino acids, all differing in their side-chain structure and therefore, their physical properties. Each amino acid molecule has a common backbone which begins with a reduced nitrogen atom (amino) and ends with an oxidized carbon atom (acid) with a width of about 4\si{\angstrom}. Some amino acids are polar and charged, interacting with other charged species and water. Others are hydrophobic and "hide from water," through water-exclusion forces. These acid interactions dictate the structure or the "fold" of the protein. Figure 0.2 demonstrates the levels of protein structure: from hydrogen bonding in alpha helices (a) and beta sheets (b), to folds that result in tertiary structure (c).
 
+
+
 The structure and dynamics of a protein are determined by its sequence. The amino acid sequence is specified by the genetic code of the organism, known as deoxyribose nucleic acid (DNA). Our DNA is \textit{translated} to messenger ribonucleic acid (mRNA) and \textit{transcribed} to the protein sequence. The linkage of amino acids in a linear "code" is known as the \textit{primary structure} of a protein. When the protein chain lengthens, the protein backbone folds onto itself using non-bonding interactions between the backbone hydrogen and oxygen atoms called hydrogen bonds. This causes \textit{secondary structure} like $\alpha$-helices and $\beta$-sheets to form (see Figure 1a,b). Collections of secondary structural moieties lead to the formation of \textit{tertiary structure} (see Figure 1c). A collection of proteins within the same system is called a complex with the individual proteins known as subunits. For example, a protein complex of two regulatory (R) and two catalytic (C) subunits can be written as R$_{2}$C$_{2}$. Two or more subunits within a complex is termed the \textit{quaternary structure} of the protein. Different quantities and arrangements of the same subunits can have different structures and functions. Thus, quaternary structure yields multiplicity in the number of structures a single protein complex can have. 
 
-A slight change in amino acid sequence can alter the \textit{structure} of a protein drastically, and oftentimes, affect the \textit{function}. For example, residues like Glycine (G) confer lots of flexibility in helices, often causing helices to break reversibly. A simple mutation to a more-rigid residue like Proline (P) are leads to a turn in the sequence and this, can break a helix without allowing for flexible return to helical moieties. Mutations thus oftentimes affect the way the protein moves and interacts with other molecules, leading to large-scale changes signaling cascades on the cellular level. Such is true with changes in expression levels of DNA, RNA, proteins, In this way, atomic-level alterations can have a \textit{butterfly effect}, leading to the presentation of disease phenotypes in the organism that harbors the mutation. 
+A slight change in amino acid sequence can alter the \textit{structure} of a protein drastically, and oftentimes, affect the \textit{function}. For example, residues like Glycine (G) confer lots of flexibility in helices, often causing helices to break reversibly. A simple mutation to a more-rigid residue like Proline (P) are leads to a turn in the sequence and this, can break a helix without allowing for flexible return to helical moieties. Mutations thus oftentimes affect the way the protein moves and interacts with other molecules, leading to large-scale changes signaling cascades on the cellular level. Such is true with changes in expression levels of DNA, RNA, proteins, In this way, atomic-level alterations can have a \textit{butterfly effect}, leading to the presentation of disease phenotypes in the organism that harbors the mutation. Protein Kinase A (PKA), one of the systems examined by this thesis, is a prime example of a case in which a single-point mutation can alter structure and is discussed in more detail below.
 
-Protein Kinase A (PKA), one of the systems examined by this thesis, is a prime example of a case in which a single-point mutation can alter structure and is discussed in more detail below.
+\section{How mutations affect protein structure: a multiscale perspective}
 
-\section{How mutations affect protein structure: a multiscale biologist's perspective}
+Protein Kinase A is found in every multicellular organism. It is responsible for responding to extracellular signals and eliciting an intracellular response; a signal translator and amplifier of sorts. PKA binds a molecule named cyclic adenosine monophosphate (cAMP) in the cyclic-nucleotide binding domain (CBD) regulatory subunit. Once enough cAMP is bound to PKA, the regulatory subunit relieves its inhibition on the catalytic subunit, which is responsible for phosphorylating protein targets, effectively deactivating or activating them in response to an extracellular signal. This tightly controlled mechanism is vital to the function of the cell. Any dysregulation in the response of PKA has major detrimental effects that are common in cancer \cite{Caretta2011}, and endocrine disorders like Carney Complex \cite{Horvath2010}.
 
-Protein Kinase A is found in every multicellular organism. It is responsible for responding to extracellular signals and eliciting an intracellular response; a signal translator and amplifier of sorts. PKA binds a molecule named cyclic adenosine monophosphate (cAMP) in the cyclic-nucleotide binding domain (CBD) regulatory subunit. Once enough cAMP is bound to PKA, the regulatory subunit relieves its inhibition on the catalytic subunit, which is responsible for phosphorylating protein targets, effectively deactivating or activating them in response to an extracellular signal. This tightly controlled mechanism is vital to the function of the cell. Any dysregulation in the response of PKA has major detrimental effects that are common in cancer \cite{Caretta2011}, XX
 
 A positively charged reside in PKA, Arginine (R) in position 333 of the regulatory subunit interacts directly with the first molecule of cAMP sensed by PKA. Because of its flexibility, the tetrameric for PKA RI$\alpha$ structure has proven difficult to elucidate [cite], but scientists figured out that with a mutation of R333, the dynamics of PKA are stabilized enough for structural biochemists to be able to visualize it.
 
@@ -427,33 +484,30 @@ A positively charged reside in PKA, Arginine (R) in position 333 of the regulato
 \label{fig:RC} 
 \end{figure}
 
-
-
- When R333  is mutated to a Lysine (K), which is \textit{also} positively charged, the shape of the PKA molecule changes not slightly, but drastically (see Figure 0.3). This mutation also affects PKA function, altering the way the protein responds to the cAMP signal. In the wild-type (WT) R333 case, the protein is dynamic, with a swinging protein domain that creates a butterfly motion in the protein. It responds to cAMP by dissociating the regulatory subunit from the catalytic subunit, relieving inhibition and activating PKA. In contrast, the K333 mutation makes the protein more globular, neutralizing the motion of swinging domain\cite{Cheng2009} and changes the interaction between cAMP and the regulatory subunit, completely altering the way that PKA is activated. This and other mutations are known to be the root cause of diseases like Carney complex\cite{Kirschner2000} and Adrenocortical Cushing’s adenoma\cite{Calebiro2014}. In this way, a single residue mutation effects the dynamics of a protein, and the way that the protein interacts with its environment. 
-
+ When R333 is mutated to a Lysine (K), which is \textit{also} positively charged, the shape of the PKA molecule changes not slightly, but drastically (see Figure 0.3). This mutation also affects PKA function, altering the way the protein responds to the cAMP signal. In the wild-type (WT) R333 case, the protein is dynamic, with a swinging protein domain that creates a butterfly motion in the protein. It responds to cAMP by dissociating the regulatory subunit from the catalytic subunit, relieving inhibition and activating PKA. In contrast, the K333 mutation makes the protein more globular, neutralizing the motion of swinging domain\cite{Cheng2009} and changes the interaction between cAMP and the regulatory subunit, completely altering the way that PKA is activated. This and other mutations are known to be the root cause of diseases like Carney complex\cite{Kirschner2000} and Adrenocortical Cushing’s adenoma\cite{Calebiro2014}. In this way, a single residue mutation effects the dynamics of a protein, and the way that the protein interacts with its environment. 
 
 \section{Structural methodologies for visualization of biology}
 
-As the specialization of this degree is centered on Multiscale Biology, the following chapters will discuss experiments that utilize information gathered from different structure elucidation methods with range in spatial scales from small molecule (\si{\angstrom}), to proteins (nm), to membranous structures on the sub-cellular level ($\mu$m). The following subsections review the pertinent methodologies for biological structure determination and alludes to the ways these methods facilitated scientific investigations in the coming chapters. 
+As the specialization of this degree is centered on Multiscale Biology, the following chapters will discuss experimental techniques that utilize information gathered from different structure elucidation methods with range in spatial scales from small molecule (\si{\angstrom}), to proteins (nm), to membranous structures on the sub-cellular level ($\mu$m). The following subsections review the pertinent methodologies for biological structure determination and alludes to the ways these methods facilitated scientific investigations in the coming chapters. 
 
 \subsection{X-ray Crystallography}
-Crystal x-ray diffraction or Crystallography is popular and widely used method for determining atomic-level positions of small molecules and proteins. First developed in 1912 by Max von Laue and later further developed by William Henry Bragg and Sir William Lawrence Bragg \cite{Bragg2014}, crystallography is based on the principal of X-ray diffraction by the atoms in an ordered crystalline substance. 
+Crystal x-ray diffraction also known as X-ray Crystallography is popular and widely used method for determining atomic-level positions of small molecules and proteins. First developed in 1912 by Max von Laue and later further developed by William Henry Bragg and Sir William Lawrence Bragg \cite{Bragg2014}, crystallography is based on the principal of X-ray diffraction by the atoms in an ordered crystalline substance. 
 
-As the name indicates, the subject of interest is suspended in a crystallographic form and a beam of X-rays is shot at the sample. Using the angular positions of the diffracted X-ray beams and a mathematical equation known as the Bragg equation:
+As the name indicates, the subject of interest is suspended in a crystallographic form and a beam of X-rays at a particular energy, marked by its wavelength, $\lambda$, is shot at the sample. Using the angle, $\theta$ of the diffracted X-ray beams and a mathematical equation known as the Bragg equation: 
 
 \begin{equation}
 n\lambda=2d\sin\theta
 \end{equation}
-Where n is an integer multiple of the wavelength, $\lambda$ of the X-ray beam, while d is the distance between the planes of the crystals, and $\theta$ is the scattering angle. From the interference and diffraction pattern produced by the X-ray beam after hitting the crystal lattice structure, one can back-calculate atomic positions. 
+Where n is an integer multiple of the wavelength, $\lambda$, d is the distance between the planes of the crystals, and $\theta$ is the scattering angle, one can understand the structure of the biological specimen. From the interference and diffraction pattern produced by the X-ray beam after hitting the crystal lattice structure, one can back-calculate atomic positions. 
 
-X-ray crystal structures yield \si{\angstrom}-level resolution of structure; a real asset for computational chemists and biophysicists who use the atomic positions as inputs for their models. Section 0.4 of the introduction will elaborate more on how atomistic positions are used to understand dynamics and functions of small molecules and proteins. 
+X-ray crystal structures yield \si{\angstrom}-level resolution of structure; a real asset for computational chemists and biophysicists who use the atomic positions as inputs for their models. Section 0.5 of the introduction will elaborate more on how atomistic positions are used to understand dynamics and functions of small molecules and proteins. 
 
 It is important to note that an X-ray structure is but a snapshot of a molecule in a single state of its ensemble of conformational states. Although crystal structures are unparalleled in their accuracy of single structure, by nature, they do not give information about molecular flexibility.  Furthermore, the resolution of atomic positions falls off as molecules increase in size. Therefore, crystallography is limited in the size of the molecules that can be investigated with sufficient accuracy. For this, X-ray structures can be complimented with other structural determination and computational methodologies, further discussed in the coming sections. 
 
-Chapter 2 combines X-crystallography with molecular dynamics in an investigative study of common structural motifs used by an infectious organism. In Chapter 3, we will explore the caveats of crystallography and show how molecular dynamics can expand on structural information not offered by these snapshots of proteins. 
+Chapter 2 combines X-ray Crystallography with molecular dynamics (discussed in section 0.5.1) in an investigative study of common structural motifs used by an infectious organism. In Chapter 3, we will explore the caveats of crystallography and show how molecular dynamics can expand on structural information not offered by these snapshots of proteins. 
 
 \subsection{Hydrogen/Deuterium Exchange Mass Spectrometry}
-A remedy for the limited structural ensembles that can be understood with X-ray crystallography is Hydrogen/Deuterium Exchange Mass Spectrometry(H/DxMS).  Since the discovery of the "heavy" hydrogen isotope, deuterium in 1932 by Harold Urey et al. \cite{Urey1932}, Deuterium has been used in a myriad of experimental techniques. Early in the 21st century, the application of the Deuterium to the study of proteins appeared \cite{Engen2001}. 
+A supplement for the limited structural ensembles that can be understood with X-ray crystallography is Hydrogen/Deuterium Exchange Mass Spectrometry(H/DxMS).  Since the discovery of the "heavy" hydrogen isotope, deuterium in 1932 by Harold Urey et al. \cite{Urey1932}, Deuterium has been used in a myriad of experimental techniques. Early in the 21st century, the application of the Deuterium to the study of proteins appeared \cite{Engen2001}. 
 
 As indicated by the name, in H/DxMS, Hydrogen and Deuterium exchange (H/Dx) for one another. This happens specifically with labile Hydrogen atoms on the backbone nitrogen, which exchange nearly instantaneously.  In a solution of D$_{2}$O (the Deuterium version of H$_{2}$O), exchange is rapid if backbone Nitrogen are surface-exposed or located in an unstructured region of the protein, and slower if the nitrogen is buried in the core of a dynamic protein. Exchange can happen at a rate on the order of milliseconds to seconds if amide nitrogen are not hydrogen bonded, but can take minutes to days if hydrogen bonds are stable. Timescales of exchange are translated to the  "degree of protection" of the amide and indicate the degree of dynamics and structure of the protein itself.The exchange reaction of hydrogen for deuterium is then quenched by acidification of the protein (pH ~ 2.5), which serves to "freeze" the deuteration of the protein.  Proteolysis then follows-- a method that degrades the protein into smaller fragments to be analyzed by Mass Spectrometry (MS). Mass Spectrometry determines the atomic weight of the fragments, yielding the information of which nitrogen have exchanged their hydrogen for deuterium \cite{Konermann2011}. 
 
@@ -461,10 +515,10 @@ This technique is used to understand the comparative changes in dynamics induced
 
 This method compliments computational methods like Molecular Dynamics which explore conformational ensembles of proteins. Chapter 3  details how H/DxMS in combination with Molecular Dynamics have brought us closer to a more holistic understanding of the structure of a protein complex, as was briefly discussed earlier. 
 
-While X-ray crystallography and H/DxMS give information about local protein structure, the following methods give insights about global structural features of proteins. 
+While X-ray crystallography and H/DxMS give information about protein structure on the angstrom level, a multitude of methods exist that reveal insights about global structural features of proteins on the nanometer scale.
 
 \subsection{Small-Angle X-ray Scattering}
-As discussed earlier, X-ray crystallography utilizes the diffraction, or "bending", of X-rays to resolve the atomic positions comprising molecular structure. But X-rays can also interact with a sample, altering the momentum of the beam in a phenomenon known as \textit{scattering}. In the phenomenon of scattering, the photons in an X-ray beam interact with electrons in a biological structure. The scattering pattern indicates the fluctuation of the electron density of the matter being investigated. Put more simply, the scattering profile gives information about the overall shape of a molecule. This is accomplished by measuring the scattering profile in the following way: a photon of wavelength $\lambda$ scatters off the molecular sample at an angle, 2$\theta$ is related to the scattering vector, q through equation 2. The intensity of the scattering vector, I(q) is a function of a multitude of factors, including molecular volume, size, electron density. 
+As discussed earlier, X-ray crystallography utilizes the diffraction, or "bending", of X-rays to resolve the atomic positions comprising molecular structure. But X-rays can also interact with a sample, altering the momentum of the beam in a phenomenon known as \textit{scattering}. In the phenomenon of scattering, the photons in an X-ray beam interact with electrons in a biological structure. The scattering pattern indicates the fluctuation of the electron density of the matter being investigated. Put more simply, the scattering profile gives information about the overall shape of a molecule. This is accomplished by measuring the scattering profile in the following way: a photon of wavelength $\lambda$ scatters off the molecular sample at an angle, 2$\theta$ is related to the scattering vector, q through equation 0.2. The intensity of the scattering vector, I(q) is a function of a multitude of factors, including molecular volume, size, electron density. 
 
 \begin{equation}
     q = \frac { 4 \pi \sin ( \theta ) } { \lambda }
@@ -488,62 +542,142 @@ Vitrification involves cooling the sample to very low (cryogenic) temperatures t
 
 \setcounter{figure}{3}
 \begin{figure}
-\centering
-	\includegraphics[scale=0.23]{SERCA_RyR.png}
-	\caption{Angstrom-level representations of biomolecules} The Sarco/Endoplasmic Reticulum Calcium-ATPase, SERCA2a, (PDBID:5MPM) crystallized at 3.3\si{Angstrom} resolution (green, left) and the Ryanodine Receptor, RyR2, (PDBID:5GOA) resolved at 4.2\si{Angstrom} with Cryo-EM. 
-5MPM
+\centerline{\includegraphics[scale=0.25]{SERCA_RyR.png}}
+	\caption{Angstrom-level representations of biomolecules} The Sarco/Endoplasmic Reticulum Calcium-ATPase, SERCA2a, (PDBID:5MPM) crystallized at 3.3\si{\angstrom} resolution (green, left) and the Ryanodine Receptor, RyR2, (PDBID:5GOA) resolved at 4.2\si{\angstrom} with Cryo-EM. 
 \end{figure}
 
-Cryo-EM is a popular method for understanding the structure large proteins which can be too "noisy" for solution experiments like H/DxMS and Nuclear Magnetic Resonance\cite{Ishima2000}. In fact, the larger the system, the more intriguing the results of Cryo-EM can be \cite{Frank1995,Lee2015,Sevvana2018}. Figure 0.4 compares the size of SERCA2a, a protein that was resolved using X-ray crystallography at 3.3\si{angstrom} and RyR2, a large (>2MDa) protein at 4.2\si{Angstrom} with Cryo-EM.
+Cryo-EM is a popular method for understanding the structure large proteins which can be too "noisy" for solution experiments like H/DxMS and Nuclear Magnetic Resonance\cite{Ishima2000}. In fact, the larger the system, the more intriguing the results of Cryo-EM can be \cite{Frank1995,Lee2015,Sevvana2018}. Figure 0.4 compares the size of SERCA2a, a protein resolved using X-ray crystallography at 3.3\si{\angstrom} and RyR2, a large (>2MDa) protein at 4.2\si{\angstrom} with Cryo-EM. The larger the system, the more possible projections of the molecule that can exist. This is because molecules are not oriented when they are captured in vitreous water. Thus, part of the "magic" of Cryo-EM stems from its use in resolving information from randomly oriented molecules. 
 
-The larger the system, the more possible projections of the molecule that can exist. This is because molecules are not oriented when they are captured in vitreous water. Thus, part of the "magic" of Cryo-EM stems from its use in resolving information from randomly oriented molecules. 
-
-Our ability to visualize dynamic, large, and complex structures is a direct result of Joachim Frank's work in analyzing and processing the images derived from Cryo-EM \cite{Frank1970}. The algorithm, known as "cross-correlation," averages ensembles of structural states to resolve what is known as a "single-particle reconstruction" of a biological specimen \cite{Saxton1976}. Using several thousand 2D images of the same molecule in random orientations, the algorithm generates 3D reconstructions from 2D projections\cite{Frank2009}. 
-
+Our ability to visualize dynamic, large, and complex Cryo-EM structures is a direct result of Joachim Frank's work in analyzing and processing the images derived from Cryo-EM \cite{Frank1970}. The algorithm, known as "cross-correlation," averages ensembles of structural states to resolve what is known as a "single-particle reconstruction" of a biological specimen \cite{Saxton1976}. Using several thousand 2D images of the same molecule in random orientations, the algorithm generates 3D reconstructions from 2D projections\cite{Frank2009}. 
 Cryo-EM gives molecular detail on the order of several \si{angstrom}. The size-limitation problem still stands however: the larger the protein, the lower the atomic resolution will be. But the popularity of this method has and will undoubtedly continue to drive the development of both Cryo-EM and the algorithms used to resolve molecular structures. One can only hope that the resolution will improve, yielding atomistic detail. In the context of this thesis, Cryo-EM structures gave us insights into the subcellular context of large structures like the Ryanodine Receptor. The likes of which will be discussed in Chapter 4. 
 
 \subsection{Electron Tomography}
 As we scale up from atoms to molecules in living systems, the next "step" is towards the subcellular level. This is realm within which we can see the direct effect of proteins. The name, "subcellular," alludes to the fact that this scale is only part of a cell. At this level, organelles-- boundaries that distinguish specialized regions of the cell--become the subject of focus. To see within the cell, we can use a special technique used to determine the 3D structure of a cell known as electron tomography. 
 
-As its name indicates, electron tomography uses an electron beam as its source of a penetrating wave of energy. Tomography is an imaging technique that "sections" or penetrates the object being visualized. In the case of electron tomography, a biological specimen undergoes a tilt-series, where the sample is exposed to the beam at different angles resulting in different projections of the specimen \cite{Fridman2012,Koning2018}. The specimen itself is fixed with chemicals that "lock-in" the physical structure and stained with heavy metals that increase the contrast of lipids and proteins. Gold particles are often used as fiduciary markers to align projections. Upon alignment, the boundaries of important structures are traced and used for reconstruction on the subvolumes \cite{Yu2008,Lee2018}.
+As its name indicates, electron tomography uses an electron beam as its source of a penetrating wave of energy. Tomography is an imaging technique that "sections" or penetrates the object being visualized. In the case of electron tomography, a biological specimen undergoes a tilt-series, where the sample is exposed to the beam at different angles resulting in different projections of the specimen \cite{Fridman2012,Koning2018}. The specimen itself is fixed with chemicals that "lock-in" the physical structure and stained with heavy metals that increase the contrast of lipids and proteins. Gold particles are often used as fiduciary markers to align projections. Upon alignment, the boundaries of important structures are traced and used for reconstruction on the sub-volumes \cite{Yu2008,Lee2018}.
 
 Three-dimensional reconstructions of subcellular volumes are used in this thesis to understand the dynamics of calcium signaling in cardiac tissue\cite{Hayashi2009}. In the fourth chapter these realistic geometries are used as a framework within which we reconstitute the biochemical reactions that underlie calcium signaling. More details will be given on this in the final section of the introduction.   
 
 \section{Biophysical structure modeling methodologies}
-Studying the dynamics of biological systems is no simple feat. Proteins are incredibly small and their relevant motions are fast. The oftentimes too fast to study with available technology. F
+Studying the dynamics of biological systems is no simple feat. Proteins are incredibly small and their relevant motions are fast; oftentimes too fast to study with available technology. Fortunately, a number of computational tools that simulate molecular motion exist. This section contains a brief introduction to two such computational tools used to model the dynamics of proteins, Molecular Dynamics and Brownian Dynamics. 
 
 \subsection{Molecular Dynamics}
-Since the late 70's, computers have been used in the field of biochemistry, providing visual insights into dynamics of proteins\cite{McCammon1979}. 
+Since the late 70's, computers have been used in the field of biochemistry, providing visual insights into dynamics of proteins\cite{Levitt1975,McCammon1979}. Since the first simulations of bovine pancreatic trypsin inhibitor, the field of biomolecular simulation has expanded both in the systems that have been investigated, along with the algorithms used to compute the forces that govern molecular motion.
+
+Molecular Dynamics (MD) is a computational technique used to compute the spatial and temporal atomic motions according to Newton's equations of motion, where \textit{F} is force, \textit{m} is mass, and \textit{a} is acceleration (see equation 0.3). The gradient of potential energy, \textit{U} in space is described by equation 0.4 where $U \vec { R }$ are the coordinates of all of the atoms in the structure. These atomic positions oftentimes are determined by X-ray crystal structures as discussed in earlier sections.
+
 \begin{equation}
-    V ( \mathbf { r } ) = \sum _ { \text { bonds } } k _ { r } \left( r - r _ { \mathrm { eq } } \right) ^ { 2 } + \sum _ { \text { angles } } k _ { \theta } \left( \theta - \theta _ { \mathrm { eq } } \right) ^ { 2 } + \sum _ { \text { difinedrals } } \frac { V _ { n } } { 2 } [ 1 + \cos ( n \phi - \gamma ) ] + \sum _ { i < j } \left[ \frac { A _ { i j } } { R _ { i j } ^ { 12 } } - \frac { B _ { i j } } { R _ { i j } ^ { 6 } } \right] + \sum _ { i < j } \frac { q _ { i } q _ { j } } { \epsilon R _ { i j } }
+   F = ma
 \end{equation}
+
+\begin{equation}
+   F ( \vec { R } ) = - \nabla U ( \vec { R } )
+\end{equation}
+
+For a large system, the analytic solution of this function is impossible to solve, but a numerical solution is made possible using a collection of equations that describe the forces influencing atomic motions. Time is discretized, or subdivided into small steps. In MD, simulated time is on the order of 1 to 2 femtoseconds (fs), $1\times10^{-15}$ s. After every time step, we solve for the potential energy function by effectively summing the forces acting on every atom in the system. The forces can be split into bonding and non-bonding forces as they are in equation 5, below.  
+
+\begin{align}
+  \label{eq:eight}
+   \begin{split}
+    \begin{gathered}
+     U ( \vec { R } ) = \underbrace { \sum _ {bonds} k _ { i } ^ \text {bond} \left( r _ { i } - r _ { 0 } \right) ^ { 2 } +  \sum _ { angles } k _ { i } ^ { \text { angle} } \left( \theta _ { i } - \theta _ { 0 } \right) ^ { 2 } + \sum _ { {dihedrals} } k _ { i } ^ {\text{dihe}} \left[ 1 + \cos \left( n _ { i } \phi _ { i } + \delta _ { i } \right) \right]}_{ U _ {\text{bonding}} }\\
+     + \underbrace{\overbrace { \sum _ { i } \sum _ { j \neq i } 4 \epsilon _ { i j } \left[ \left( \frac { A _ { i j } } { r _ { i j } } \right) ^ { 12 } - \left( \frac { B _ { i j } } { r _ { i j } } \right) ^ { 6 } \right]}^{U_{\text{van der Waals}}}
+      \overbrace{\sum _ { i } \sum _ { j \neq i } \left(\frac {q _ { i } q _ { j } } { \epsilon r _ { i j } }\right)}^{ U _ { \text{electrostatics} }}} _ { U _ { \text{non-bonding}}}
+    \end{gathered}
+  \end{split}
+\end{align}
+  
+The bonding potential term is defined as the oscillation of the equilibrium bond length. The angular potential is defined as the oscillation of three atoms forming an angle. The dihedral potential is a torsional relation of four atoms oscillating about a central bonding axis. All bonded forces are described by corresponding spring constants (${k}_{i}$) with radial distances (\textit{r}), angular ($\theta$) and dihedral angle ($\phi$) terms. These terms have an initial value and value after every time step (0 and \textit{i}, respectively). 
+
+The van der Waals potential, a synonymous with the total intermolecular forces, is expressed as a "6-12" Lennard Jones potential, or the difference between experimentally determined values Aij and Bij over the radial distances, r$_{ij}$ multiplied by the Lennard Jones well depth, $\epsilon_{i}$. Finally, the electrostatic potential, the effective attraction and repulsion of charged or partially charged atoms, is proportional to the partial atomic charges of the atoms (q$_{i}$ q$_{j}$), and inversely proportional to the distance (Rij). 
+
+The summation of the bonding and non-bonding forces leads to a spatial alteration of each atom in the system. Collectively, is results in the spatial motion of the atoms in the molecule, or \textit{intramolecular motion}. Iterative solutions of these equations through time result in a trajectory of atomic motion. This is, effectively, a change in structure as a function of time, where the protein moves and responds to its environment. The amount of linear time that can be achieved depends both on the size of the protein (in number of atoms) and amount of computational power available to the investigator. The larger the system, the more computational power required and the longer it will take to compute the dynamics. Today, it is routine to simulate nanosecond-microseconds of time with MD, though there are methods to reach even millisecond timescales\cite{Shaw2009,Pierce2012}. 
+
+The energetic terms associated with each atom in a system are collectively called a molecular mechanics "force field." Depending on what the user is modeling-- lipids, carbohydrates, nucleotides, proteins, metals--one can find force fields specialized in the accurate prediction of the dynamics of the chosen system. Some examples of force fields are AMBER\cite{CaseD.A.BetzR.M.CeruttiD.S.CheathamT.E.IIIDardenT.A.DukeR.E.GieseT.J.GohlkeH.GoetzA.W.HomeyerN.IzadiS.JanowskiP.KausJ.KovalenkoA.LeeT.S.LeGrandS.LiP.LuchkoT.LuoR.MadejB.MerzK.M.MonardG.2015}, CHARMM \cite{Brooks2009}, GROMACS \cite{VanDerSpoel2005}, and OPLS \cite{Damm1997}. The forcefields are used to design the system in terms of energetics, and the potential energy function is calculated with a molecular mechanics engine. The engines have been developed with their own force fields such as the GROMOS MD engine \cite{Christen2005} that is used with the GROMACS force field. Some Popular molecular mechanics engines include AMBER \cite{Pearlman1995}, NAMD \cite{Nelson1996}, GROMOS \cite{Christen2005}, and Desmond \cite{Bowers2006}. Many force fields and engines can be mixed-and-matched, leaving the decision up to the user on what combination best suits their study.
+
+The protein being investigated using MD can represent the solvent in one of two ways: explicitly or as a continuum. The explicit solvent description models models every atom of ions and water and sometimes dummy atoms that are meant to model the behavior of the electrons in the molecule. In the continuum approach, the solvent is modeled inexplicitly as an electric field. The latter approach yields increased computational power as water calculations take up a significant amount of time \cite{Anandakrishnan2015}. Nevertheless, water interactions with the system are oftentimes important, so there is an information trade-off for inexplicit water modeling. Additionally, there are a wide variety of explicit water models that can be used to simulate a chosen system \cite{Florova2010}. 
+
+MD has a long, successful track record of uncovering the hidden features of protein motions \cite{Hospital2015}. In these cases, that which is not revealed by crystallography or other structure determination techniques can be further understood with the use of molecular dynamics. In this thesis, MD will be to understand the effects of mutations in a protein-protein system in Chapter 2, and in Chapter 3, MD will be used to simulate a conformation of PKA that has been elusive to crystallographers.
+
 \subsection{Brownian Dynamics}
+As we scale upwards through biomolecular space and time, the next level we reach centers on the \textit{intermolecular} interactions \textit{between} molecules.Brownian Dynamics (BD) is a method developed to model molecular diffusion and estimates kinetic association events. This is especially useful for the step-wise understanding of complicated biochemical mechanisms. 
+
+BD is specifically focused on the determination of second-order association kinetics between proteins and their binding partners, be they proteins, small molecules, or ions. BD uses several main assumptions in order to accomplish this. Firstly the solvent is modeled using a dielectric field and ionic continuum. In stark contrast to MD, most BD models the atoms in a molecule as rigid bodies, though methods exist which incorporate flexibility. Furthermore, each atom is modeled as a hard-sphere and the atomic forces include mostly electrostatic forces. 
+
+\setcounter{figure}{3}
+\begin{figure}
+\centerline{\includegraphics[scale=0.3]{BD.png}}
+	\caption{Brownian Dynamics simulation with BrownDye} A molecule begins on the centrosymmetric b-surface and can either escape (red arrow) beyond the q-surface or associate (green arrow) to the specified binding region (gold)
+\end{figure}
+
+The equation of molecular motion (equation 0.6) in a BD is a function of the position (x), rotation ($\phi$), attractive and repulsive forces (F), and the torque (T) of a particle index (i). A random vector (w) simulates the random "kicks" of water on the diffusion of the particle, an effective "Brownian motion" factor. D is the diffusion tensor and s the matrix square root of the diffusion tensor \cite{Huber2010}. 
+
+\begin{equation}
+    d \left( \begin{array} { c } { x _ { i } } \\ { \varphi _ { i } } \end{array} \right) = \frac { d t } { k _ { B } T } \mathbf { D } \cdot \left( \mathbf { T } _ { i } \right) + \sqrt { 2 d t } \mathbf { s } \cdot w + \nabla \cdot \mathbf { D } d t
+\end{equation}
+
+The algorithm used to compute rate constants from the Brownian trajectories was developed by Northrup, Allison and McCammon \cite{Northrup1984} and is known in the field as the NAM algorithm. Using the NAM algorithm, one can determine the spatial trajectory of a molecule in 3D space. A number of BD simulation programs exist, including SDA \cite{Gabdoulline1997,Gabdoulline1998}, ReaDDy \cite{Schoneberg2013}, Brownmove \cite{Geyer2011}, \text{BD\_BOX} \cite{Dlugosz2011}, and  BrownDye \cite{Huber2010}. In order to set up a simulation, one must parameterize system by assigning the appropriate parameters to each atom. The relevant terms in the case of BD van der Waals radial and charge values that are often assigned using MD force fields like the ones discussed in  section 0.5.1, earlier. Using the charge and radial parameters, an electrostatic description of the molecule in the form of a charge field can be calculated using programs like DelPhi \cite{Honig1995} and APBS \cite{Baker2001}. In this thesis, the program BrownDye is used to perform BD simulations and APBS is used for the electrostatic description of the biomolecules. 
+
+In BD simulations with BrownDye, diffusing molecules are placed at a radial distance \textit{b} from oneanother. The simulation begins by placing the diffusing molecules at different distances of b distributed over a spherical surface, called the "b-surface." Molecular diffusion begins at the start of the simulation and ends in one of two ways: diffusion past a certain distance "q" or the "q-surface" or with association of the two molecules in after satisfying the contacts set by the user in the encounter complex description \cite{Huber2010}. The timescale of integration is typically on the order of picoseconds (1 $\times$ 10$^{-12}s$). With the speed of BrownDye, millions of trials can be run on a desktop computer to estimate $\beta$, or the probability that a binding partner located on the b-surface will satisfy the encounter complex and "react" rather than escape beyond the q-surface. Figure 0.5 demonstrates the basic principles of the BrownDye simulation package used to determine the rate of bimolecular association, k$_{on}$ (see equation 0.7, below.
+
+\begin{equation}
+    \boldsymbol { k } _ { o n } = \boldsymbol { k } _ { b } \boldsymbol { \beta }
+\end{equation}
+
+The rate of diffusion of the ligand to the b-surface, k$_{b}$ can be calculated using equation 0.8, below. k$_{b}$ is a function of  U(r), the effective potential energy at a distance r from the center of the sphere, the temperature, T, Boltzmann's constant, k$_{b}$, and the diffusion coefficient, D, which varies with radial distance, (r).
+
+\begin{equation}
+    \boldsymbol { k } _ { b } = \frac{ 4 \pi} { \left[ \int _ { \mathbf { b } } ^ { \infty } \frac { \exp \left( \text { U } ( \boldsymbol { r } ) / \boldsymbol { k } _ { B } \boldsymbol { T } \right) } { \boldsymbol { r } ^ { 2 } \boldsymbol { D } ( \boldsymbol { r } ) } \boldsymbol { d } r \right] }
+\end{equation}
+
+Models of the structural and kinetic properties of biomolecules are useful not only to those experimentalists seeking to further understand and visualize the behavior of biochemical systems, but also to computational biologists seeking to model biochemical phenomena on the cellular level. Using BD simulations, we can tease out the association rates between to molecules which is often difficult to measure with experiments. Chapter 1 will demonstrate the ways in which this kinetic information can be used in higher-order cellular models. In chapter 3, Brownian Dynamics will be applied to the understanding of cAMP association to PKA.  
+
+\section{Subcellular biochemical modeling methodologies}
+As we continue transcending through the scales of space and time, having already explored intramolecular and intermolecular physics, we arrive at the scales within which these biochemical properties exert their effects: the subcellular level. Even the slightest alterations in chemical structure and function can have dramatic effect on the dynamics of cellular systems, a biophysical butterfly effect. Biological modeling at this level allows for the holistic understanding of the biochemistry within the subcellular space. This is especially useful for complex systems where multiple competing reactions occur. More specifically, it is useful for the comparison and contextualization of reactions in biological systems. A number of methods that model diffusion and reactions on the molecular level have been developed and used extensively to explain and predict biological observables. %The following important distinctions between computational biology modeling methods will be described: 1) deterministic vs. stochastic; 2) network vs. rule-based ; 3) non-spatial vs. spatial; and finally, 4) population vs.agent-based, also known as continuum vs discrete. Alternatively, partial differential equations (PDE), which are functions of multiple variables, can be used.
 
 
-\section{Biochemical modeling methodologies}
+\subsection{Modeling biology with differential equations}
+Biochemical descriptions of biological systems are almost always complex. In a given cell, anywhere from hundreds to thousands of different molecular species exist. The reactions between these species only intensifies the complexity when you consider that these molecules react with many different partners to create more molecules. Yet again, mathematics comes to the rescue, giving biologists, chemists, and physicists a language that can be used to model biological systems. Using calculus, one can describe the dynamical system in terms of the change in molecular concentration and local density with respect to time. 
 
-\subsection{Ordinary Differential Equations}
+Modeling the change of a single feature of a molecular system, say a given concentration, with respect to time, is the essence of what is termed an Ordinary Differential Equation (ODE). Reactions, too, can be described in this way, where the concentrations of molecular species change as a function of the forward and reverse rate of consumption. Molecular diffusion in single and multiple can also be modeled with ODEs making this a powerful method for understanding the temporal evolution of gradients in cellular systems \cite{Faeder2009}.
 
-\subsection{Monte Carlo Spatial Modeling}
+One can also model the change in a system as a function of several simultaneously changing parameters. Consider for example, modeling the rate of change as a function of time through a particular three-dimensional region, like an organelle. This is arguably a more complex problem As it involves a spatial description of the system. To model systems like this, one could use spatial ODE solvers \cite{Harrison2016} which use specialized algorithms to model diffusion through space. These complex differential equations can be solved remarkably quickly because of a very important feature of differential equations: the continuum assumption.
 
+The fundamental component of all differential equations in biological simulation methods is the use of non-discrete representations of molecular species. That is, all the elements of a species are non-distinguishable from one-another. In ODE and PDE biological simulations, molecular concentrations are modeled as a "field" that evolves in its intensity with the passage of time according to the equations that describe its temporal evolution. This approximation works well for large molecular quantities that are well-mixed. It falls short, however, when we consider situations in which chemical concentrations are extremely low.
 
 \begin{comment}
-The following body of work examines cardiac function and dysfunction from the perspective of proteins. This is no trivial feat, as cardiac dysfunction can occur at multiple scales of space and time. How are these scales examined? How do changes at one spatiotemporal scale translate, resulting in heart disease? 
-
- On the level of cardiac muscle, blood flow can become altered causing damage to the tissue known as an infarct. On the level of the cells, which collectively make up cardiac tissue, disease causes cellular membranes to become reorganized. On the scale of the building blocks which make up the cells, proteins become misaligned and chemical signals in the form of Calcium ions are improperly sorted. 
+One would agree that biology has a \textit{hint} of unpredictability or randomness to it; especially when it comes to the movement of small molecules in large, complex sub-volumes. Therefore, it is appropriate to use stochastic methods for modeling subcellular dynamics. Stochastic differential equations can be used in these cases
 \end{comment}
 
+
+\subsection{Discrete subcellular spatial modeling}
+As insinuated in the earlier section, there are delicate systems in biology where molecular concentrations are extremely low. For example, a region in the cardiac muscle cell that sits between the plasma membrane and an organelle named the Sarcoplasmic Reticulum (SR), the dyadic cleft, has, can have an average of one to three molecules in the subspace. In such cases, it is inappropriate to treat molecules as a continuum. Instead, we can model the molecules discretely using algorithms that track the spatial location of these ions. Additionally, the more we seek to model realistic phenomena in biology, the more we need to consider the importance of stochasticity in biological systems. Using the program MCell \cite{Stiles2001a,Kerr2008}, we can accomplish exactly this. 
+
+MCell is a Monte-Carlo is a simulation method that stochastically and explicitly models the 3D diffusion and reaction of molecular species by treating them as particles. The Monte-Carlo technique uses random number generator that "chooses" from an ensemble of values which correspond to the spatial displacement of molecules in the system. In the context of subcellular modeling, Monte Carlo algorithms are are aimed at representing the stochastic nature of biochemical system. The algorithm describing motion in MCell is a simplified, unbiased random walk. Molecules are modeled as volume-less points that diffuse according to assigned diffusion parameters. 
+
+One of MCell's most impressive attribute is that it is a \textit{master counter}. At every integration timestep, often on the scale of microseconds ($1 \times 10^{-6}s$) molecules have the potential to either react, diffuse, or remain unchanged. MCell explicitly counts not only the number of particles but tracks their spatial location in subcellular geometries. Molecular reactions can be unimolecular or, upon spatial encounter of two species, bimolecular. Reactions can happen with two freely diffusing "volume" molecules, or between membrane-bound "surface" molecules and volume molecules. Surface molecules are also capable of 3D diffusion and changing their orientation in a membrane. 
+
+Using mesh generation tools like GaMer \cite{Yu2008, Lee2018}, cellular reconstructions obtained from electron microscopy can be reconstructed into usable meshes for simulation. These complex subcellular geometries can be imported into CellBlender \cite{Gupta2018}, the graphical user interface that is used to design the MCell simulation. Kinetic descriptions of the subcellular system, taken from experiments or from simulation techniques like MD and BD can be used to model the reactions between species in the system. The focus of the final Chapter is the use of MCell to understand cardiac function and dysfunction on the subcellular level. 
+
+\section{Conclusion of the Introduction}
+The following body of work examines cardiac function and dysfunction from the perspective of proteins. This is no trivial feat, as cardiac dysfunction can occur at multiple scales of space and time. How are these scales examined? How do changes at one spatiotemporal scale translate, resulting in heart disease? How can mathematics be used to understand these invisible phenomena?
+
+Although the language of mathematics is common, the ability to learn mathematics is often a matter of privilege. The same is true of any systematic study. To devote time to the study of a discipline is likely to come with ones' basic needs being met, though examples to the contrary likely exist. Even more so, exposure to literature and teachers that can aide in the understanding of the concepts underlying higher order mathematics grants even more opportunity to expand the boundaries of mathematical study.
+
+For those of us that have been so privileged to study a discipline systematically, it remains our duty to communicate its power. The goal of this work is to show just how stunningly visual biochemistry in the language of mathematics can be. It aims to highlight the fruit yielded by the collaborative and independent labor of a world full of talented mathematicians, physicists, and chemists alike. 
+
+This thesis is an ode to the scientists that came before me. It is but an example of the application of mathematical theory and biophysical methods to the chemical understanding of molecular function through the lens of the computational microscope. 
+ 
+
+ \begin{comment}
+ On the level of cardiac muscle, blood flow can become altered causing damage to the tissue known as an infarct. On the level of the cells, which collectively make up cardiac tissue, disease causes cellular membranes to become reorganized. On the scale of the building blocks which make up the cells, proteins become misaligned and chemical signals in the form of Calcium ions are improperly sorted. 
+ \end{comment}
  
  
 \end{dissertationintroduction}
 
 
 
-Although the language of mathematics is common to many cultures, the ability to learn mathematics is often a matter of privilege. The same is true of any systematic study. To devote time to the study of a discipline is likely to come with ones' basic needs being met, though examples to the contrary likely exist. Even more so, exposure to literature and teachers that can aide in the understanding of the concepts underlying higher order mathematics grants even more opportunity to expand the boundaries of mathematical study.
-
-For those of us that have been so privileged to study a discipline systematically, it remains our duty to communicate its power. The goal of this work is to show just how stunningly visual biochemistry in the language of mathematics can be. It aims to highlight the fruit yielded by the collaborative and independent labor of a world full of talented mathematicians, physicists, and chemists alike. 
-
-This thesis is an ode to the scientists that came before me. It is but an example of the application of mathematical theory and biophysical methods to the chemical understanding of biomolecular function through the lens of the computational microscope. 
 
 
 
@@ -647,7 +781,7 @@ With this new  model of the heterotetramer, we decided to use Brownian Dynamics 
 
 With these new insights from computational simulations, we have a better understanding of the heterotetrameric structure of PKA, bridging the gap between solution and crystallographic observations. Additionally, we predict the structure that PKA uses for the final step of activation-the association to CBD-A.   \\
 %% Inserting the first page of the  Flipback paper as an image
-\includegraphics[height=0.9\textheight]{Flipback_Paper_Chapter3.pdf}
+\includegraphics[height=1\textheight]{Flipback_Paper_Chapter3.pdf}
 
 %% Inserting the rest of the Flipback paper pages and add entries to LoF, LoT
 \includepdf[
@@ -697,9 +831,13 @@ This discovery would not have been possible without the original simulations by 
 
 %...
 \chapter{Subcellular spatial modeling in realistic geometries with stochastic particle methods to understand heart disease}
+\section{Abstract}
+The evasive source and cause of diseases is oftentimes \textit{smaller than you think}. Imagine, though, chasing something that you can't actually \textit{see}. This is the plight of almost all scientists whose study does not involve the use of a microscope. Fortunately for the modern-day biomedical scientist, computational advancements harnessing the near-limitless potential of mathematics in the language of physics are able to \textit{see the unseen}.
+Computational microscopy is a tool developed by thousands of talented scientists that yields the power of visualization to the scientist seeking to visually understand biological systems. With progressive advancements in the power of computer graphics and the development of mathematical theories to explain biological behavior, computational microscopy is incessantly and obsessively refined by thousands of scientists throughout over the greater half of the last century. Using this powerful tool, the artist within the scientist is able to visualize what they know in their mind's eye to be true through their experiments. It also allows scientific discoveries to be translated without the explicit use of language. With respect to diseases, the culprit is oftentimes an atomic-level alteration that has a butterfly effect throughout the cell, scaling up through space and time to affect organs and eventually, the whole organism. In accordance with its name, the computational microscope not only allows us to visualize extremely small entities like atoms, molecules, proteins, cells, and the like. But it is especially unique, as it allows us to move through time in order to understand the dynamics of the system we seek to "see". Like a biophysically detailed time-lapse, we are able to \textit{see through time}, the development of a microscopic system and compare how small changes can have large-scale effects. Depending on the system, the spatiotemporal scale of the system in question is variable. In this thesis, the computational microscope is applied to multiple scales of biology in order to investigate function an dysfunction in biological systems.
+
 
 \section{Introduction}
-The actor playing a major role in the underlying mechanisms of the heartbeat is \textit{smaller than you think}. Over 135 years ago, Dr. Singer demonstrated that a human heart would not beat in the absence of Ca\textsuperscript{2+} \cite{Ringer1883}. As a process, the heartbeat is an inherently multiscale process. The human heart is about the size of a human fist. The atria and ventricles of the heart make up the "working chambers" which pump oxygenated blood through the body, and deliver deoxygenated blood to the lungs. The thickness of these walls are several millimeters depending on the region of the heart. Each cell is a complicated but regular structure of membranous invaginations that range from 20-450 nm in diameter. Cardiomyocytes, or muscle cells, contain bundles of muscle fibers that are responsible for the contraction of the heart. The thick filaments are made out of myosin protein and are about that are 160-170 \si{angstrom} in diameter while thinner actin filaments are 6 to 10\si{angstrom} in diameter. Finally, large proteins in close contact with each other, (roughly 20 nm) sense calcium ions (roughly 231 pm radius) triggering processes that result in the beating of the heart. Thus, cardiac function spans scales that can be observed with the naked eye, to invisible phenomena that only a computational microscope can see.  
+ Over 135 years ago, Dr. Singer demonstrated that a human heart would not beat in the absence of Ca\textsuperscript{2+} \cite{Ringer1883}. Yet, the human heart is the size of a fist. Thus the process, the heartbeat is an inherently multiscale process. The atria and ventricles of the heart make up the "working chambers" which pump oxygenated blood through the body, and deliver deoxygenated blood to the lungs. The thickness of these walls are several millimeters depending on the region of the heart. Each cell is a complicated but regular structure of membranous invaginations that range from 20-450 nm in diameter. Cardiomyocytes, or muscle cells, contain bundles of muscle fibers that are responsible for the contraction of the heart. The thick filaments are made out of myosin protein and are about that are 160-170 \si{\angstrom} in diameter while thinner actin filaments are 6 to 10\si{\angstrom} in diameter. Finally, large proteins in close contact with each other, (roughly 20 nm) sense calcium ions (roughly 231 pm radius) triggering processes that result in the beating of the heart. Thus, cardiac function spans scales that can be observed with the naked eye, to invisible phenomena that only a computational microscope can see.  
 
  A healthy heart contracts in response to a synchronous electrical stimulation of the plasma membrane, also known as the sarcolemma, initiated by the sinoatrial (SA) node. The membrane action potential travels from the SA node and is propagated from cell to cell through gap junctions\cite{Bernstein2006}. This electrical stimulation results in membrane depolarization, to which the cell responds with a muscular contraction, a phenomenon known as  excitation-contraction coupling (ECC)\cite{Cheng1994}. 
  
@@ -707,12 +845,11 @@ The actor playing a major role in the underlying mechanisms of the heartbeat is 
 
 High calcium concentrations in the extracellular matrix cause influx of Ca\textsuperscript{2+} through LTCC, into the cardiac muscle cells which maintain a very low Ca\textsuperscript{2+}  concentration. Directly adjacent to LTCC, RyR, regulated by more than 30 proteins\cite{Fill2002}, cause a \textit{signal amplification} by releasing thousands of Ca\textsuperscript{2+}  ions from the SR into the cell, an event known as a triggered calcium spark. In response to the high increase in the second-messenger, Troponin C (TnC) molecules bind Ca\textsuperscript{2+}, relieving the inhibition of actin on myosin. These muscle fiber proteins slide across each other leading to muscle fiber shortening, or muscular contraction that squeezes blood out of the atrial chambers of the heart into the ventricles and out towards the rest of the body. 
 
-Early on, LTCC (also known as Dihydropyridine Receptors, and Voltage-Dependent Calcium Channels) \cite{Lu1994} and RyR \cite{Stern1999} were implicated in the generation of calcium sparks. Though theories about ECC existed \cite{Stern1992}, the first Ca\textsuperscript{2+} spark event was visualized and confirmed 25 years ago using laser-scanning confocal microscopy \cite{Cheng1993} and quickly confirmed in subsequent studies \cite{Cannell1994,Cannell1995}. Within a few years, computer simulations were applied to this system to model the elementary events responsible to elucidate the subcellular mechanisms responsible for what was visualized with the early fluorescence measurements \cite{Cannell1997}. 
+Early on, LTCC (also known as Dihydropyridine Receptors, and Voltage-Dependent Calcium Channels) \cite{Lu1994} and RyR \cite{Stern1999} were implicated in the generation of calcium sparks. Though theories about ECC existed \cite{Stern1992}, the first Ca\textsuperscript{2+} spark event was visualized and confirmed 25 years ago using laser-scanning confocal microscopy \cite{Cheng1993} and quickly confirmed in subsequent studies \cite{Cannell1994,Cannell1995}. Within a few years, computer simulations were applied to this system to model the elementary events responsible to elucidate the subcellular mechanisms responsible for what was visualized with the early fluorescence measurements \cite{Cannell1997}.
 
-Imaging techniques have limitations in terms of their ability to resolve spatial changes in calcium levels. Therefore, computational models have played an important role to tease out important features of CICR and ECC \cite{Maleckar2017}. The field has an impressive track-record of over 30 years of computational modeling of cardiac excitation phenomena. 
+Imaging techniques have limitations in terms of their ability to resolve spatial changes in calcium levels. Therefore, computational models have played an important role to tease out important features of CICR and ECC \cite{Maleckar2017}. The field has an impressive track-record of over 30 years of computational modeling of cardiac excitation phenomena that have predicted 
 
 In 2012, Hake et al. debuted the first subcellular model of a Calcium spark \cite{Hake2012} using realistic geometries of a cardiac calcium unit \cite{Hayashi2009}.  In this study, we combine the realistic geometries used by Hake et al. with stochastic models approaches using particle-based, spatial reaction-diffusion modeling methods.\cite{Hirakis2018}. We investigate the effects of disease phenotypes, such as T-Tubule deformation\cite{Louch2010}, RyR dispersion\cite{Kolstad2018}, and alterations of the mouse Action Potential\cite{Morotti2014} on calcium signaling. 
-
 
 The first use of stochastic particle simulations to investigate cardiac Ca\textsuperscript{2+} signaling mechanisms was by Koh et al. in 2006\cite{Koh2006}. In their study model, Koh et al. showed the effects of altering dyadic volume had a pronounced effect on Ca\textsuperscript{2+} SR fluxes. In our study
 
@@ -729,7 +866,7 @@ To divide the mesh into "model objects" usable by MCell and Cellblender, we used
 
 In diseased states, T-Tubule networks are known to be disrupted \cite{Louch2010,Ibrahim2011,Crossman2015}, which oftentimes results in increased dyadic junction distances \cite{Polakova2013}. In an effort to understand the effect that disease phenotypes have on calcium signaling, we deformed the (TT2) T-Tubule that interfaces with the junctional SR, in a way that did not significatly alter the volume or the surface area. The WT or "normal" T-Tubule and the "deformed" T-Tubule simulations were then compared against oneanother to understand the effects of the deformations in cardiac signaling. 
 
-Although the number of calcium release units in a cardiac myocyte is on the 
+Although the number of calcium release units in a cardiac myocyte is on the order of several thousand to several hundred thousand depending on the cardiac tissue.
 
 \subsection{The MCell model of the CRU}
 Our model uses a stochastic modeling engine named MCell \cite{Stiles2001a,Kerr2008,Czech2009} to track the positions of each molecule in the system individually. This approach treats molecules as points in space, able to diffuse in three dimensions of space. Reactions between species happen only when two molecules spatially encounter each other. Each molecule is accounted for explicitly in contrast to the continuum methods used by Hake et al. \cite{Hake2012}. 
@@ -739,16 +876,15 @@ The same cytosolic and SR $Ca^{2+}$ buffers were used in our MCell model; namely
 The CRU model of a $Ca^{2+}$ spark by Hake et al. \cite{Hake2012} was not designed to model the phenomenon known as Calcium Induced Calcium Release(CICR); an action potential-mediated excitation mechanism of L-Type Calcium Channel (LTCC) fluxes triggering $Ca^{2+}$ efflux from the SR through RyR channels. Instead, Hake's original model was used to understand spark termination. It utilized a phenomenological model of the Ryanodine Receptor that occupied one of two states, on or off. Ryanodine receptors were not activated in response to a particular signal, and the number of open receptors was set to a constant number. Moreover, the $Ca^{2+}$ signal terminated in response an SR $Ca^{2+}$ concentration pre-set by the model builders. We sought out to simulate CICR stochastically in response to sarcolemmal excitation. To do this, we implemented a Markov Model of RyR \cite{Saftenku2001} as well as model of the LTCC \cite{Greenstein2002} that features both voltage dependent and calcium dependent activation and inactivation properties. Effectively, our RyR respond dynamically to an calcium sparklet generated by LTCC openings in response to a membrane voltage change. Most importantly, our RyR are activated only by the spatial reaction of $Ca^{2+}$ with RyR.
 
 \subsection{Experimental design}
-One major difference between our model and the earlier model that used the same geometry \cite{Hake2012} is our use of stochastic simulations to understand Ca\textsuperscript{2+} spark dynamics in the CRU. Utilizing the power of MCell, we are able to count the exact positions and numbers of the molecules that comprise our system.  The molecules in our systems are modeled as particles that diffuse according to a specified molecular diffusion rate according to the equations of Brownian motion\cite{Stiles2001a}. The reactions in our systems can be unimolecular (state transitions) or bimolecular. Bimolecular reactions occur only upon spatial encounter,  and can happen between two cytosolically diffusing molecules (volume molecules) or with membrane-bound species (surface molecules). The Monte Carlo  algorithm used by MCell ensures that each simulation gives an independent result that is non-deterministic.
+One major difference between our model and the earlier model that used the same geometry \cite{Hake2012} is our use of stochastic simulations to understand Ca\textsuperscript{2+} spark dynamics in the CRU. The discretization of the system is an important advancement in the modeling of CICR because the resting level of Ca$^{2+}$ in the CRU is extremely low (140$\mu$M). In our particular volume, the number of Ca$^{2+}$ ions are on average, 35. Owning to the low number of ions at rest, the spatial location of the ions is more representative of biological reality than a continuum representation of the concentration which is traditionally used \cite{Maleckar2017}. 
 
-A second major difference between our model and Hake's CRU model is the use of an electrical stimulus to induce a Ca\textsuperscript{2+} spark. As noted earlier, the model by Hake et al. used a phenomenological discription of the RyR in the dyadic junction, whereby the number of RyR open was set to a constant. When set to open, RyR would "release" Ca\textsuperscript{2+} from the SR that is equivalent to a concentration gradient. Our model requires the use of an electrical stimulus to activate LTCC in the T-Tubules. Upon binding Ca\textsuperscript{2+} On the cytosolic side of the Ryanodine Receptor, individual  Ca\textsuperscript{2+} are released from the sarcoplasmic reticulum into the cytosol. With these improvements,We are able to investigate a multitude of questions that were not possible using the earlier model design.
+Utilizing the power of MCell, we can count the exact positions and numbers of the molecules that comprise our system. The molecules in our systems are modeled as point particles that diffuse according to a specified molecular diffusion rate according to the equations of Brownian motion\cite{Stiles2001a}. The reactions in our systems can be unimolecular (state transitions) or bimolecular. Bimolecular reactions occur only upon spatial encounter, and can occur between two cytosolically diffusing molecules (volume molecules) or with membrane-bound species (surface molecules). The Monte Carlo algorithm used by MCell ensures that each simulation gives an independent result that is non-deterministic.
 
-With the use of stimulus-induced LTCC opening, we were able to investigate the effects of action potential alteration on calcium spark genesis. We accomplished this by using action potentials derived from healthy and diseased left ventricle myocytes. More specifically, we used a model of over-expressed Calmodulin-dependent Kinase II (CaMKII-OE) \cite{Morotti2014}
+Another major difference between our model and Hake's CRU model is the use of an electrical stimulus to induce a Ca\textsuperscript{2+} spark. As noted earlier, the model by Hake et al. used a phenomenological discription of the RyR in the dyadic junction, whereby the number of RyR open was set to a constant. When set to open, RyR would "release" Ca\textsuperscript{2+} from the SR that is equivalent to a concentration gradient. Our model requires the use of an electrical stimulus to activate LTCC in the T-Tubules. Upon binding Ca\textsuperscript{2+} on the cytosolic side, the of the Ryanodine Receptor releases discrete Ca\textsuperscript{2+} ions from the sarcoplasmic reticulum into the cytosol. It is important to note that a calcium spark can be triggered by an LTCC "sparklet" or the spark can be spontaneous. With these improvements, we are able to investigate cases that were not possible to test using the earlier model design.
+
+The use of stimulus-induced LTCC opening allowed for the investigation of the effects of action potential alteration on calcium spark genesis. We accomplished this by using action potentials derived from healthy and diseased left ventricle myocytes. More specifically, we used a model of over-expressed Calmodulin-dependent Kinase II (CaMKII-OE) \cite{Morotti2014}. Our goal in comparing the action potentials is to see whether or not the action potential alone can alter the activation of the RyR in the single CRU. 
  
-
-The use of the realistic geometry also lends the ability to understand the effects of morphological changes in the membranous structures. 
-
-During the course of our investigations, we sought to understand the effects of 
+The use of the realistic geometry also to allows us to inquire about the effects of morphological changes in the membranous structures. Using the open-source 3D graphics software, Blender, we deformed the T-Tubule to recreate the deformations alluded to in multiple reports\cite{Sobie2013AlterationsAnalyses, Polakova2013,Crossman2015,}. The T-Tubule was altered in such a way that minimally affected the volume and surface area of the mesh but doubled the dyadic volume. This permutation is used to understand the phenomenon known as "detubulation" where the T-tubule network becomes disrupted in diseased forms of cardiac tissue.  
 
 
 \begin{comment}
@@ -776,14 +912,13 @@ During the course of our investigations, we sought to understand the effects of
 
 
 The kinetics for our cytosolic and SR $Ca^{2+}$ buffers were modeled similarly to Hake et al (2012) according to equation 4.1. The cytosolic buffers in our simulations are ATP, Calmodulin (CMDN), Troponin-C (TRPN), and Fluo-4 and our SR buffers are Calsequestrin (CSQN) and Fluo-5.  The buffer reaction mechanism is a simple two-step reaction, where the buffer an exist in either apo or $Ca^{2+}$-bound states. 
-\begin{equation}. 
+\begin{equation} 
 \ce{B + Ca^2+  <=>[\ce{k_{f}}][\ce{k_{r}}]
 $\underset{\text{Calcium-bound Buffer}}{\ce{B \cdot Ca^{2+}}}$
 }
 \end{equation}
 
 At equilibrium, the product of the forward rate, k$_{f}$ and the concentration of $Ca^{2+}$  and the buffer is equal to to product of the concentration of the $Ca^{2+}$-bound buffer and the reverse rate, k$_{r}$, according to equation 4.2.  
-
 \begin{equation}
 k_{f}[B][Ca^{2+}] = k_{r}[B \cdot Ca^{2+}]
 \end{equation}
@@ -817,7 +952,7 @@ Using this relationship, we are able to solve for the concentration of the buffe
 
 \subsubsection{PMCA and NCX fluxes}
 
-There are two major sarcolemmal pumps known to maintain homeostasis in cardiomyocytes, the Plasma Membrane Calcium-ATPase (PMCA) pump and the Sodium-Calcium exchanger (NCX) pump \cite{Bers2002}. Hake et al. originally modeled the sarcolemmal pumps using three separatefluxes, PMCA (termed pCa in Hake et al.), NCX, and a background calcium flux, (termed Cab in Hake et al.). In our model, we capture the background calcium flux utilizing "leak" reactions in both our PMCA and NCX models (see Figure 4.1). 
+There are two major sarcolemmal pumps known to maintain homeostasis in cardiomyocytes, the Plasma Membrane Calcium-ATPase (PMCA) pump and the Sodium-Calcium exchanger (NCX) pump \cite{Bers2002}. Hake et al. originally modeled the sarcolemmal pumps using three separate fluxes, PMCA (termed pCa in Hake et al.), NCX, and a background calcium flux, (termed Cab in Hake et al.). In our model, we capture the background calcium flux utilizing "leak" reactions in both our PMCA and NCX models (see Figure 4.1). 
 
 \begin{figure}
 \centering
@@ -1221,8 +1356,8 @@ The system dynamics comparing the effects of the fluorophores on the baseline sy
 \begin{figure}
 \centering
 	\includegraphics[scale=0.45]{buffer_fluo_molecules_c_Comparison.png}
-	\caption{Molecular species in absence of LTCC, RyR and SERCA} Comparing simulations with only RyR (blue) and RyR and SERCA(red)
-	\subcaption{Cytosolic Calcium dynamics; \textbf{(b)} Sarcoplasmic Reticulum Calcium dynamics; \textbf{(c)} Calcium-bound ATP; \textbf{(d)} Calcium-bound Calmodulin; \textbf{(e)} Calcium-bound Troponin-C; \textbf{(f)}Calcium-bound Calsequestrin}
+	\caption{Molecular species in absence of LTCC, RyR and SERCA} 
+	\subcaption{Cytosolic Calcium dynamics; \textbf{(b)} Sarcoplasmic Reticulum Calcium dynamics; \textbf{(c)} Calcium-bound ATP; \textbf{(d)} Calcium-bound Calmodulin; \textbf{(e)} Calcium-bound Troponin-C; \textbf{(f)} Calcium-bound Calsequestrin; Comparing simulations with only RyR (blue) and RyR and SERCA(red)}
 \label{fig:buffer_fluo} 
 \end{figure}
 
@@ -1232,10 +1367,10 @@ In order to validate our model, we sought confirmation that that our system coul
 
 \setcounter{figure}{5}
 \begin{figure}
-\centering
+%\centering
 	\includegraphics[scale=0.6]{buffer_fluo_RyR_r_Comparison.png}
-	\caption{Ryanodine Receptor gating modes in absence of L-Type Calcium Channels} RyR and SERCA (red) and only RyR (blue)
-	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors}
+	\caption{Ryanodine Receptor gating modes in absence of L-Type Calcium Channels} 
+	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors; RyR and SERCA (red) and only RyR (blue)}
 \label{fig:Buffer RyR} 
 \end{figure}
 
@@ -1253,7 +1388,7 @@ Following our simulations with 1 LTCC, we sought to understand the effect that i
 
 \setcounter{figure}{7}
 \begin{figure}
-\centering
+%\centering
 	\includegraphics[scale=0.52]{RyRflux_1AP_LTCC_hn_Comparison.png}
 	\caption{Ryanodine Receptor flux after 1 action potential stimulus compared across L-Type Calcium Channels} Average number of openings of RyR in normal T-Tubules with a healthy action potential compared across a series of LTCC numbers: 10 LTCC (red), 8 LTCC (orange), 6 LTCC (yellow), 4 LTCC (green), 2 LTCC (blue), 1 LTCC (purple)
 \label{fig:hnhd 1 AP LTCC RyR } 
@@ -1262,7 +1397,7 @@ Following our simulations with 1 LTCC, we sought to understand the effect that i
 \subsection{Activation in response to single action potential}
 With the use of the LTCC model developed by Greenstein and Winslow \cite{Greenstein2002}, we were able to interrogate the effect of diseases sarcolemmal stimuli on Ca$^{2+}$ signaling (see Figure 1). A number of recent studies have examined disease electrical stimulus phenotypes \cite{Morotti2014, Edwards2014}, demonstrating that indeed, left-ventricle mouse action potentials have pronounced effects. We chose to model the effect of Calcium-Calmodulin Kinase II over-expression (CaMKII-OE) which results heart-failure in mice.
 
-The effect of the diseased action potential on Calcium signaling is the same across all L-Type Calcium channels levels. The diseased AP leads to an overall increase in calcium levels in the cytosol (see figure 4.9) as a result of frequent activations of Ryanodine Receptors (see figure 4.10). This is an expected result, as depolarization of the membrane is relatively higher in the later half of the AP in the CAMKII-OE disease state. Most interesting is the later-stage RyR activation seen in the disease states. Significantly more RyR fire at later stages of the AP in diseased states compared to those with a healthy AP. This will undoubtedly affect the synchronous firing of the calcium release units, a phenomenon known as Late Ca$^{2+}$ Sparks (LCS) that have recently been observed in models of CAMKII-OE \cite{Fowler2017}. It should be noted that his effect is seen in all variations of LTCC numbers but only the cases of 1 LTCC and 4 LTCC are shown here in the interest of brevity. 
+The effect of the diseased action potential on Calcium signaling is the same across all L-Type Calcium channels levels. The diseased AP leads to an overall increase in calcium levels in the cytosol (see figure 4.9) as a result of frequent activations of Ryanodine Receptors (see figure 4.10). This is an expected result, as depolarization of the membrane is relatively higher in the later half of the AP in the CAMKII-OE disease state. Most interesting is the later-stage RyR activation seen in the disease states. Significantly more RyR fire at later stages of the AP in diseased states compared to those with a healthy AP. This will likely lead to asynchronous firing of the calcium release units. In the case of CAMKII-OE, this phenomenon is known as Late Ca$^{2+}$ Sparks (LCS)\cite{Fowler2017}. It should be noted that his effect is seen in all variations of LTCC numbers but only the cases of 1 LTCC and 4 LTCC are shown here in the interest of brevity. 
 
 Our result is consistent with the Ca$^{2+}$ signaling profile  CAMKII-OE models in mouse models, which indicate more frequent sparks as well as greater time to peak calcium and larger maximal rate of rise \cite{Guo2012a}. This effect that is most apparent in figure 4.9, where levels of Ca$^{2+}$  release are higher overall, across all cases of LTCC alterations and have longer rise times. 
 
@@ -1282,21 +1417,21 @@ Our result is consistent with the Ca$^{2+}$ signaling profile  CAMKII-OE models 
 \setcounter{figure}{9}
 \begin{figure}
 \centering
-	\includegraphics[scale=0.4]{hnhd1RyR_r_1AP_Comparison.png}
-	\caption{Ryanodine Receptor gating modes with 1 L-Type Calcium Channel comparing action potential alterations}Healthy action potential (purple), Diseased action potential (blue)
-	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors}
+	\includegraphics[scale=0.42]{hnhd1RyR_r_1AP_Comparison.png}
+	\caption{Ryanodine Receptor gating modes with 1 L-Type Calcium Channel comparing action potential alterations}
+	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors: Healthy action potential (purple), Diseased action potential (blue)}
 \label{fig:hnhd 1 LTCC 1 AP RyR} 
 \end{figure}
 
 \setcounter{figure}{10}
 \begin{figure}
 \centering
-	\includegraphics[scale=0.4]{hnhd4RyR_r_Comparison.png}	\caption{Ryanodine Receptor gating modes with 4 L-Type Calcium Channels comparing action potential alterations}Healthy action potential (purple), Diseased action potential (blue)
-	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors}
+	\includegraphics[scale=0.4]{hnhd4RyR_r_Comparison.png}	\caption{Ryanodine Receptor gating modes with 4 L-Type Calcium Channels comparing action potential alterations}
+	\subcaption{All open Ryanodine Receptors; \textbf{(b)} High-gating open Ryanodine Receptors; \textbf{(c)} Low-gating open Ryanodine Receptors; Healthy action potential (purple), Diseased action potential (blue)}
 \label{fig:hnhd 4 LTCC 1 AP RyR} 
 \end{figure}
 
-In an additional effort to understand disease phenotypes in heart failure, we investigated the effects of T-Tubule deformations on cardiac calcium release units. In the literature, is effect is termed "de-tubulation" of myocyte tissue. Because of the close juxtaposition of T-Tubule membranes and SR membranes, we predicted an increase in the dyadic space would result in less RyR activation and overall lower cytosolic calcium. 
+In an additional effort to understand disease phenotypes in heart failure, we investigated the effects of T-Tubule deformations on cardiac calcium release units. In the literature, is effect is termed "de-tubulation" of myocyte tissue \cite{Louch2010}. Because of the close juxtaposition of T-Tubule membranes and SR membranes, we predicted an increase in the dyadic space would result in less RyR activation and overall lower cytosolic calcium. 
 
 \subsection{Activation in response to multiple action potentials}
 
@@ -1315,10 +1450,9 @@ In an additional effort to understand disease phenotypes in heart failure, we in
 \setcounter{figure}{12}
 \begin{figure}
 \centering
-	\includegraphics[scale=0.4]{cytCa_geom_Comparison.png}
-		\caption{Cytosolic Calcium Calcium dynamics comparing T-Tubule geometry alterations}10 LTCC (red), 8 LTCC (orange), 6 LTCC (yellow), \\ 4 LTCC (green), 2 LTCC (blue), 1 LTCC (purple)
-	\subcaption{Normal T-Tubule with Healthy action potential showing Calcium dynamics in the cytosol}
-	\subcaption{Deformed T-Tubule with Healthy action potential showing Calcium dynamics in the cytosol}
+	\includegraphics[scale=0.4]{cytCa_hndn_Comparison.png}
+		\caption{Cytosolic Calcium Calcium dynamics comparing T-Tubule geometry alterations}
+	\subcaption{Normal T-Tubule with Healthy action potential showing Calcium dynamics in the cytosol; \textbf{(b)} Deformed T-Tubule with Healthy action potential showing Calcium dynamics in the cytosol; 10 LTCC (red), 8 LTCC (orange), 6 LTCC (yellow), \\ 4 LTCC (green), 2 LTCC (blue), 1 LTCC (purple)}
 \label{fig:geometry comparison} 
 \end{figure}
 
